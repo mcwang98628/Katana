@@ -1,0 +1,12 @@
+﻿id,RoomNameKey,RoomType,ContentFileName,ConditionType,Value,IsOnly
+001,神秘商店,ShopRoom,RoomContent_Shop,None,0,false
+101,神器宝箱,TreasureRoom,RoomContent_Award_Artifact,None,0,false
+102,诅咒宝箱,TreasureRoom,RoomContent_Award_Curse,LevelIndexGreater,999,false
+103,贪婪宝箱,TreasureRoom,RoomContent_Award_Greedy,LevelIndexGreater,999,false
+201,驱魔池,EventRoom,RoomContent_Event_ExorcismPool,LevelIndexGreater,999,true
+202,生命之泉,EventRoom,RoomContent_Event_LifeSpring,HpPercentageLess,0.8,true
+205,血池,EventRoom,RoomContent_Event_BloodPool,LevelIndexGreater,1,true
+207,黄金水晶,EventRoom,RoomContent_Event_GoldCrystal,None,30,true
+210,生命雕像,EventRoom,RoomContent_Event_StatueGreen,None,None,true
+211,力量雕像,EventRoom,RoomContent_Event_StatueRed,None,None,true
+212,速度雕像,EventRoom,RoomContent_Event_StatueYellow,None,None,true

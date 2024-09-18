@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79ccd2fad80afb4fbd1299e40cab6f9, type: 3}
+  m_Name: Feedback_SaHit
+  m_EditorClassIdentifier: 
+  UseCameraShake: 1
+  CameraShakeAmplitude: 0.3
+  CameraShakeDuration: 0.1
+  AddScreenColor: 1
+  ScreenColor: {r: 1, g: 1, b: 1, a: 0}
+  AddMul: 0.01
+  UseCameraZoom: 0
+  ZoomValue: -3
+  EnterZoomTime: 0.1
+  ExitZoomTime: 0.2
+  ZoomDuration: 0.3
+  UseAudio: 1
+  AudioClips:
+  - {fileID: 8300000, guid: e2573f65fda7b684caf4c1ce3d1e67ed, type: 3}
+  - {fileID: 8300000, guid: d59234df33f1d5540ad1a2e461713185, type: 3}
+  SFXPriority: 0
+  UseChangeColor: 1
+  Color: {r: 12.844469, g: 12.844469, b: 12.844469, a: 1}
+  ColorDuration: 0.2
+  UseChangeRimColor: 0
+  RimColor: {r: 0, g: 0, b: 0, a: 0}
+  RimRange: 0
+  RimColorDuration: 0
+  UsePauseFrame: 0
+  PauseFrameDuration: 0.1
+  UseTimeScale: 0
+  TimeScaleDuration: 0.4
+  TimeScaleValue: 0.1
+  UseModelShake: 0
+  ModelShakeAmplitude: 0.05
+  ModelShakeDuration: 0.1
+  ModelShakeTimeBetween: 0.02
+  UseEnvironment: 0
+  UseEventBackEnvironment: 0
+  EnvironmentTime: 0
+  EnvironmentEnterTime: 0
+  EnvironmentExitTime: 0
+  EnvironmentItem: {fileID: 0}

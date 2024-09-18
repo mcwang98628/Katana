@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9574fe12fe374f48a47985e97b5fad3, type: 3}
+  m_Name: NPCTalk_BloodPool
+  m_EditorClassIdentifier: 
+  NpcTalkId: 0
+  NPCTalkName: NPC_BloodPool
+  TalkList:
+  - TalkType: 0
+    TalkText: NPC_BloodPool_Talk1
+    FalseTalkText: 
+    DropItemPool: {fileID: 0}
+    DropItemCount: 0
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: 
+    GiveItemPool: {fileID: 0}
+    GoldValue: 0
+    DeductGoldText: 
+  - TalkType: 5
+    TalkText: 
+    FalseTalkText: 
+    DropItemPool: {fileID: 11400000, guid: db003cfd5ce8312409b1a8f9b43b0d20, type: 2}
+    DropItemCount: 1
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: "\u662F\u5426\u613F\u610F\u732E\u796D\u751F\u547D\uFF0C\u964D\u4F4E\u6062\u590D\u6982\u7387\u6765\u589E\u52A0\u653B\u51FB\uFF1F"
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: NPC_BloodPool_Talk2
+    GiveItemPool: {fileID: 11400000, guid: db003cfd5ce8312409b1a8f9b43b0d20, type: 2}
+    GoldValue: 0
+    DeductGoldText: 
+  RepeatTalk:
+  - ...

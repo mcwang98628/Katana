@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8610897501707683061
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 762b210f2f388744f86c9361bdd030db, type: 3}
+  m_Name: SimpleFog
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  isActive:
+    m_OverrideState: 1
+    m_Value: 1
+  endDistance:
+    m_OverrideState: 1
+    m_Value: 500
+    min: 0
+  startDistance:
+    m_OverrideState: 1
+    m_Value: 35
+    min: 0
+  heightFollowCamera:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
+  heightFogDensity:
+    m_OverrideState: 1
+    m_Value: 0.05
+  fogHeight:
+    m_OverrideState: 1
+    m_Value: -24.72
+  fogHeightFade:
+    m_OverrideState: 1
+    m_Value: 34.3
+    min: 0
+  fogHeightPower:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+  SunDirection:
+    m_OverrideState: 1
+    m_Value: {x: 132.8, y: -78.8, z: 0}
+  sunLightColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.6132076, g: 0.6116057, b: 0.6045301, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  sunColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  sunPower:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+  topColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  topPower:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+  skyColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  groundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.084905684, g: 0.028276153, b: 0.013216452, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  groundPower:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+  ambientSkyColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.9911568, b: 0.759434, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  ambientEquatorColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5566038, g: 0.1095817, b: 0.002625496, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  ambientGroundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.5188679, g: 0.35230082, b: 0.13461196, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Chapter_4
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -8610897501707683061}

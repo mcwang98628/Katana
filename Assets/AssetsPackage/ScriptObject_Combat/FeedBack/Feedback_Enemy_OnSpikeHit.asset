@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79ccd2fad80afb4fbd1299e40cab6f9, type: 3}
+  m_Name: Feedback_Enemy_OnSpikeHit
+  m_EditorClassIdentifier: 
+  UseCameraShake: 1
+  CameraShakeAmplitude: 0.2
+  CameraShakeDuration: 0.1
+  AddScreenColor: 0
+  ScreenColor: {r: 0, g: 0, b: 0, a: 0}
+  AddMul: 0
+  UseCameraZoom: 0
+  ZoomValue: 0
+  EnterZoomTime: 0
+  ExitZoomTime: 0
+  ZoomDuration: 0
+  UseAudio: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 97464b6bc3caa497ab0a0ecf44b7cdc9, type: 3}
+  SFXPriority: 0
+  UseChangeColor: 1
+  Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  ColorDuration: 0.1
+  UseChangeRimColor: 0
+  RimColor: {r: 0, g: 0, b: 0, a: 0}
+  RimRange: 0
+  RimColorDuration: 0
+  UsePauseFrame: 0
+  PauseFrameDuration: 0.1
+  UseTimeScale: 0
+  TimeScaleDuration: 0
+  TimeScaleValue: 0
+  UseModelShake: 1
+  ModelShakeAmplitude: 0.03
+  ModelShakeDuration: 0.1
+  ModelShakeTimeBetween: 0.05
+  UseEnvironment: 0
+  UseEventBackEnvironment: 0
+  EnvironmentTime: 0
+  EnvironmentEnterTime: 0
+  EnvironmentExitTime: 0
+  EnvironmentItem: {fileID: 0}

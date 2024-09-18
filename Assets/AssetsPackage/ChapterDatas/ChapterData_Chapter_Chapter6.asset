@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f96664313cb2cd4a84ce56927eb4684, type: 3}
+  m_Name: ChapterData_Chapter_Chapter6
+  m_EditorClassIdentifier: 
+  EnvironmentData:
+  - {fileID: 11400000, guid: c4f03032544ed094bae9bdd7f6687157, type: 2}
+  - {fileID: 11400000, guid: a5cf598575d1a56419f49c7f5cd63ce8, type: 2}
+  - {fileID: 11400000, guid: 9a2011f4f1df80443bc52fe2c034863c, type: 2}
+  levelStructType: 1
+  IsTutorial: 0
+  ChapterStruct:
+  - Rooms:
+    - RoomType: 1
+      EnemyWaveCount: 0
+      MaxEnemyLv: 0
+      EnemyWaveDifficult: 0
+    - RoomType: 4
+      EnemyWaveCount: 0
+      MaxEnemyLv: 0
+      EnemyWaveDifficult: 0
+    - RoomType: 2
+      EnemyWaveCount: 1
+      MaxEnemyLv: 2
+      EnemyWaveDifficult: 4
+    - RoomType: 2
+      EnemyWaveCount: 1
+      MaxEnemyLv: 2
+      EnemyWaveDifficult: 7
+    - RoomType: 2
+      EnemyWaveCount: 1
+      MaxEnemyLv: 2
+      EnemyWaveDifficult: 7
+  EndlessLevelData:
+    EnvironmentData: {fileID: 0}
+    Room: {fileID: 0}
+    EnemyIdPool: 
+  RoomData:
+    StartRooms:
+    - {fileID: -5110107240740190330, guid: 9c6eb8bffa5146647a58ed3f1803a676, type: 3}
+    FightRooms:
+    - {fileID: 6316813351459023037, guid: 1658f712060ee2549b18a97ebfb6911e, type: 3}
+    - {fileID: 6316813351459023037, guid: 1658f712060ee2549b18a97ebfb6911e, type: 3}
+    - {fileID: 6316813351459023037, guid: 1658f712060ee2549b18a97ebfb6911e, type: 3}
+    - {fileID: 6316813351459023037, guid: 1658f712060ee2549b18a97ebfb6911e, type: 3}
+    - {fileID: 6316813351459023037, guid: 1658f712060ee2549b18a97ebfb6911e, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    - {fileID: 6316813351459023037, guid: 3015d2f9904a83645ab864e50f33fec2, type: 3}
+    BossFightRooms:
+    - {fileID: 6316813351459023037, guid: db5b96bb51378f949914210ab0427851, type: 3}
+    EmptyShopRoom: {fileID: 8023271186346309081, guid: c4bfae784437cd94c8681ac933149b19,
+      type: 3}
+    EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 4f8960c48e0ebee4bb55609aabeb46bd,
+      type: 3}
+  EnemyData:
+    EnemyList_Lv1:
+    - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+    EnemyList_Lv2:
+    - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+    - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+    EnemyList_Lv3:
+    - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+    EnemyList_Boss:
+    - {fileID: 4236465261131774203, guid: 966171572b4bff24782116e508f10c15, type: 3}
+  ItemData:
+    ArtifactPool: {fileID: 11400000, guid: f3e49cb9db788c54ebb316c6061d3952, type: 2}
+    ArtifactShopPrice: 80
+    ArtifactShopPriceIncrease: 20
+    PropPool: {fileID: 11400000, guid: 074a2210d7f20bd489fe34aa241b4c7e, type: 2}
+    PropShopPrice: 30
+    PropShopPriceIncrease: 10
+    ShopRefreshPrice: 0
+    ShopRefreshPriceStep: 0

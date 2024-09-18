@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af24cd7a5d4a56c4eb5ba05aeee814a3, type: 3}
+  m_Name: MoveInfo_Saber_Samurai_Ultimate
+  m_EditorClassIdentifier: 
+  AttackMove: {x: 0, y: 1}
+  MoveSpeed: 5
+  MoveTime: 1
+  MoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0018882751
+      value: 0.0031166077
+      inSlope: 2.9184835
+      outSlope: 2.9184835
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.30722532
+      value: 0.8942377
+      inSlope: 0.85001874
+      outSlope: 0.85001874
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08015131
+    - serializedVersion: 3
+      time: 0.99639356
+      value: 0.48076826
+      inSlope: -2.3977191
+      outSlope: -2.3977191
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.038694818
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

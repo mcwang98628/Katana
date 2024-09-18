@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a282968d9ee79044bcf781ce3d19635, type: 3}
+  m_Name: Ability_Special_BombByTime
+  m_EditorClassIdentifier: 
+  Name: "\u5149\u5F39\u79FB\u52A8"
+  Desc: 
+  triggerData:
+    TriggerEventType: 6
+    TriggerType: 1
+    Probability: 25
+    AttackTimes: 1
+    AttackMinOffsetTimes: 0
+    AttackMaxOffsetTimes: 0
+    InjuredTimes: 0
+    KillEnemyCount: 0
+    IntervalTime: 1
+    MoveIntervalTime: 0.25
+    RollIntervalTime: 0
+    PlayerShieldHoldingTrigger: 0
+    RoleDeadBuffId: 0
+  effectData:
+    ThornsMagnification: 0
+    BackstabMagnification: 0
+    MoneyAddHpValue: 0
+    MoneySubHpValue: 0
+    LessItemCoolingTime: 0
+    DizzinessTime: 0
+    ItemCountAddAttackPowerValue: 0
+    ItemCountAddAttributeType: 0
+    MoneyAddAttackPowerValue: 0
+    MaxAddAttackPowerValue: 0
+    MoneyAddAttackAttributeType: 0
+    HpProportionValue: 0
+    HpProportionAttributeType: 0
+    dmgProportionHpValue: 0
+    CrazyAttributeValue: 0
+    CrazyAttributeType: 0
+    SecondAccumulationObject: 0
+    AccumulationObjectMaxCount: 0
+    AccumulationObject: {fileID: 0}
+    TreatmentGetMoneyProportion: 0
+    ReduceMonsterHPPercentage: 0
+    DiceAttributeList: []
+    GoldMagnification: 0
+    EffectType: 35
+    AttackPower: 0
+    AttackPowerPercentage: 0
+    AttackSpeed: 0
+    CriticalProbability: 0
+    CriticalMultiplier: 0
+    InjuryMultiplier: 0.1
+    MaxHp: 0
+    MaxHpPercentage: 0
+    TreatMultiplier: 0
+    CurrentHp: 0
+    CurrentHpPercentage: 0
+    ChangeCurrentHpParticle: {fileID: 0}
+    MoveSpeed: 0
+    SetAcceleration: 0
+    isUseAccel: 0
+    startAccel: 0
+    stopAccel: 0
+    BuffLifeCycle:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0
+    BurnBuffObj: {fileID: 0}
+    CatapultTimes: 0
+    CatapultDistance: 0
+    CatapultAttackPower: 0
+    CatapultAttackPowerPercentage: 0
+    SurroudObj: {fileID: 0}
+    SurroudSpeedValue: 0
+    buffOnTouch: {fileID: 0}
+    FootPathAttackPower: 0
+    FootPathAttackPowerPercentage: 0.6
+    GoldValue: 0
+    SpawnObj: {fileID: 0}
+    SpwanPosType: 0
+    Offset: {x: 0, y: 0, z: 0}
+    Direction: {x: 0, y: 0, z: 0}
+    IsFollowRole: 0
+    AnimatorParaName: 
+    AnimatorParaTime: 0
+    SkillCoolingScale: 0
+    ThunderPrefab: {fileID: 0}
+    MaxThunderCount: 0
+    MinThunderCount: 0
+    ThunderAttackPower: 0
+    ThunderAttackPowerPercentage: 0
+    ReviveHp: 0
+    ModifyLuck: 0
+    AttackDistance: 0
+    MaxPower: 0
+    PowerRecovery: 0
+    BombExplosion: {fileID: 3151083707319042515, guid: 422803e463a365d4a97ae24cd6dc6753,
+      type: 3}
+    BombCount: 3
+    BombThrowProjectile: {fileID: 8177038634623289149, guid: 7404412b2bdc23f4985975bed8a1f271,
+      type: 3}
+    BombMoveTime: 0.5
+    BombHeight: 3
+    BombPosOffset: 3
+    BombSpwanPosType: 0
+    ThrowBombAudio: {fileID: 0}
+    ArrowAudio: {fileID: 0}
+    Arrow: {fileID: 0}
+    PrepareFeedback: {fileID: 0}
+    SaHitFeedback: {fileID: 0}
+    SaTrailMat: {fileID: 0}
+    EndParticles: {fileID: 0}
+    EndBloodBurst: {fileID: 0}
+    EndSFX: {fileID: 0}
+    EndBloodSFX: {fileID: 0}
+    PlayerAttackType: 0
+    PlayerAccumulateAttackType: 0
+    PlayerRollType: 0
+    PowerShieldAgainstAOE: {fileID: 0}
+    PowerShieldAgainstAOEOffset: {x: 0, y: 0, z: 0}
+    ShieldAgainstFeedBack: {fileID: 0}
+    ShieldDistance: 0
+    SmallShieldAgainstValue: 0
+    ShieldAttributesAng: 0
+    ShieldAttributesMoveSpeed: 0
+    ShieldMesh1: {fileID: 0}
+    ShieldMesh2: {fileID: 0}
+    AccumulateTime: 0
+    ShieldSkill_Against_Times: 0
+    ShieldSkill_Against_Interval: 0

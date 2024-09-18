@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9574fe12fe374f48a47985e97b5fad3, type: 3}
+  m_Name: NPCTalk_Chest_Greedy
+  m_EditorClassIdentifier: 
+  NpcTalkId: 0
+  NPCTalkName: NPCTalk_ArtifactChest
+  TalkList:
+  - TalkType: 0
+    TalkText: "\u8D2A\u5A6A\u8005\u7684\u5B9D\u7BB1\u5FC5\u987B\u7528\u91D1\u94B1\u624D\u80FD\u5F00\u542F\u2026\u2026"
+    FalseTalkText: 
+    DropItemPool: {fileID: 0}
+    DropItemCount: 0
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: 
+    GiveItemPool: {fileID: 0}
+    GoldValue: 0
+    DeductGoldText: 
+  - TalkType: 6
+    TalkText: 
+    FalseTalkText: 
+    DropItemPool: {fileID: 11400000, guid: 05c7ce047fdff8f498ebafe7edd285d7, type: 2}
+    DropItemCount: 3
+    ShopTalkText: "\u8FD9\u662F\u6211\u4ECE\u8FF7\u5BAB\u91CC\u641C\u522E\u5230\u7684\u5B9D\u8D1D\uFF0C\u8981\u4E0D\u8981\u770B\u770B\uFF1F"
+    ShopGoodsCount: 0
+    ShopPools:
+    - {fileID: 0}
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: "\u662F\u5426\u63A5\u53D7\u8FD9\u4E2A\u8BC5\u5492"
+    GiveItemPool: {fileID: 11400000, guid: f3e49cb9db788c54ebb316c6061d3952, type: 2}
+    GoldValue: 100
+    DeductGoldText: "\u4F7F\u7528100\u5757\u94B1\u5F00\u542F\u5B9D\u7BB1\u3002"
+  - TalkType: 0
+    TalkText: "\u5B9D\u7BB1\u5F20\u5634\u628A\u4F60\u7684\u94B1\u90FD\u5403\u5149\u4E86\uFF01"
+    FalseTalkText: "\u7A77\u662F\u539F\u7F6A\uFF01"
+    DropItemPool: {fileID: 0}
+    DropItemCount: 0
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: 
+    GiveItemPool: {fileID: 0}
+    GoldValue: 0
+    DeductGoldText: 
+  - TalkType: 1
+    TalkText: 
+    FalseTalkText: 
+    DropItemPool: {fileID: 11400000, guid: 207010f6b82a6504d9f378fe623b0003, type: 2}
+    DropItemCount: 3
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: 
+    GiveItemPool: {fileID: 0}
+    GoldValue: 0
+    DeductGoldText: 
+  RepeatTalk:
+  - 

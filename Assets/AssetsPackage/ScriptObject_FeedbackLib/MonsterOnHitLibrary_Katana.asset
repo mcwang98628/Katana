@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28068977fda243145813f2b9a7209127, type: 3}
+  m_Name: MonsterOnHitLibrary_Katana
+  m_EditorClassIdentifier: 
+  OnHitEffectsList:
+  - DmgType: 0
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 0a6817a3312c6214882e6109b26ee680, type: 2}
+    particles: {fileID: 1445757321221483012, guid: b95f95d89f757ee489a6b1ef1d18df83,
+      type: 3}
+  - DmgType: 1
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 536d6aa7d88d3fc44b2c2efb33c9abe3, type: 2}
+    particles: {fileID: 0}
+  - DmgType: 2
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 1e46e3364e1a1f5459a6484b9e021354, type: 2}
+    particles: {fileID: 2660568797277532070, guid: 2378e4eec2f09f246b8e6eade1aca3c7,
+      type: 3}
+  - DmgType: 4
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 7a918f29435f9bf419678830bf3fbcfe, type: 2}
+    particles: {fileID: 2401232552347395674, guid: f4e50551f5027c442820821fc4790087,
+      type: 3}
+  - DmgType: 5
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 6b8853ad72905f248bf0873798226a9e, type: 2}
+    particles: {fileID: 1445757321221483012, guid: b95f95d89f757ee489a6b1ef1d18df83,
+      type: 3}
+  - DmgType: 6
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 19578d20809f23e478a6bdfc63e34143, type: 2}
+    particles: {fileID: 1311206305180255783, guid: eb6ba3357b4665f458ad63cfa061da9c,
+      type: 3}
+  - DmgType: 10
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 8d2ba5228a5db124f86a5131cb493dc2, type: 2}
+    particles: {fileID: 1445757321221483012, guid: b95f95d89f757ee489a6b1ef1d18df83,
+      type: 3}
+  - DmgType: 9
+    IsCrit: 0
+    OnhitFeedbacks: {fileID: 11400000, guid: 476c3dda305bff74a972fa5171667c70, type: 2}
+    particles: {fileID: 0}

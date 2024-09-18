@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a282968d9ee79044bcf781ce3d19635, type: 3}
+  m_Name: FullMoonAbility_MoonExp
+  m_EditorClassIdentifier: 
+  Name: 
+  Desc: 
+  triggerData:
+    TriggerEventType: 36
+    TriggerType: 1
+    Probability: 0
+    AttackTimes: 3
+    AttackMinOffsetTimes: 0
+    AttackMaxOffsetTimes: 0
+    InjuredTimes: 0
+    KillEnemyCount: 0
+    IntervalTime: 0
+    MoveIntervalTime: 0
+    RollIntervalTime: 0
+    PlayerShieldHoldingTrigger: 0
+    RoleDeadBuffId: 0
+    KeyStr: 
+    EventName: 3rdAttack
+  effectData:
+    DiceCount: 0
+    ItemObj: {fileID: 0}
+    AudioClip: {fileID: 0}
+    AudioVolume: 0
+    AudioDelay: 0
+    KillRewardTagObject: {fileID: 0}
+    KnifeWingObject: {fileID: 0}
+    KnifeWingCount: 0
+    KnifeWingOffset: 0
+    MagicPower: 0
+    ThornsMagnification: 0
+    BackstabMagnification: 0
+    MoneyAddHpValue: 0
+    MoneySubHpValue: 0
+    LessItemCoolingTime: 0
+    DizzinessTime: 0
+    AttributeEffectValue: 0
+    AttributeEffectType: 0
+    ItemCountAddAttackPowerValue: 0
+    ItemCountAddAttributeType: 0
+    MoneyAddAttackPowerValue: 0
+    MaxAddAttackPowerValue: 0
+    MoneyAddAttackAttributeType: 0
+    HpProportionValue: 0
+    HpProportionAttributeType: 0
+    dmgProportionHpValue: 0
+    CrazyAttributeValue: 0
+    CrazyAttributeType: 0
+    SecondAccumulationObject: 0
+    AccumulationObjectMaxCount: 0
+    AccumulationObject: {fileID: 0}
+    TreatmentGetMoneyProportion: 0
+    ReduceMonsterHPStrengthenTag: 
+    ReduceMonsterHPPercentage: 0
+    ReduceMonsterHPPercentage2: 0
+    ReduceMonsterHPFx: {fileID: 0}
+    DiceAttributeList: []
+    GoldMagnification: 0
+    KatanaSkillKillRecoveryPower: 0
+    KatanaSkillAttackDis: 0
+    KatanaSkillAttackAng: 0
+    KatanaSkillAttackPowerPercentage: 0
+    KatanaSkillAttackWaitTime: 0
+    KatanaSkillFx: {fileID: 0}
+    KatanaSkillAudio: {fileID: 0}
+    ScatteringObject: {fileID: 0}
+    ScatteringObjectCount: 0
+    ScatteringOffset: {x: 0, y: 0, z: 0}
+    ShieldSkillDuration: 0
+    ShieldSkillAng: 0
+    ShieldSkillMoveSpeed: 0
+    TagStr: 
+    EffectType: 19
+    AttackPower: 0
+    AttackPowerPercentage: 0
+    AttackSpeed: 0
+    CriticalProbability: 0
+    CriticalMultiplier: 0
+    InjuryMultiplier: 0
+    MaxHp: 0
+    MaxHpPercentage: 0
+    TreatMultiplier: 0
+    CurrentHp: 0
+    CurrentHpPercentage: 0
+    ChangeCurrentHpParticle: {fileID: 0}
+    MoveSpeed: 0
+    SetAcceleration: 0
+    isUseAccel: 0
+    startAccel: 0
+    stopAccel: 0
+    EnemySpeed: 0
+    BuffLifeCycle:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0
+    BurnBuffObj: {fileID: 0}
+    LightningChainTag: 
+    CatapultTimes: 0
+    CatapultDistance: 0
+    CatapultAttackPower: 0
+    CatapultAttackPowerPercentage: 0
+    CatapultAttackPowerPercentage2: 0
+    LightningChainColor: {r: 0, g: 0, b: 0, a: 0}
+    LightningChainHitFx: {fileID: 0}
+    SurroudObj: {fileID: 0}
+    SurroudObjAttackPower: 0
+    SurroudObjAttackPowerPercentage: 0
+    SurroudSpeedValue: 0
+    buffOnTouch: {fileID: 0}
+    FootPathAttackPower: 0
+    FootPathAttackPowerPercentage: 0
+    GoldValue: 0
+    GoldRatio: 0
+    SpawnObj: {fileID: 105651884996131707, guid: 42b9336330881444191f5fbc5985f94e,
+      type: 3}
+    SpwanPosType: 0
+    Offset: {x: 0, y: 1, z: 2}
+    Direction: {x: 0, y: 0, z: 1}
+    IsFollowRole: 0
+    AnimatorParaName: 
+    AnimatorParaTime: 0
+    SkillCoolingScale: 0
+    ThunderPrefab: {fileID: 0}
+    MaxThunderCount: 0
+    MinThunderCount: 0
+    ThunderAttackPower: 0
+    ThunderAttackPowerPercentage: 0
+    ReviveHp: 0
+    ModifyLuck: 0
+    AttackDistance: 0
+    MaxPower: 0
+    PowerRecovery: 0
+    BombExplosion: {fileID: 0}
+    BombCount: 0
+    BombThrowProjectile: {fileID: 0}
+    BombMoveTime: 0
+    BombHeight: 0
+    BombPosOffset: 0
+    BombSpwanPosType: 0
+    ThrowBombAudio: {fileID: 0}
+    ArrowAudio: {fileID: 0}
+    Arrow: {fileID: 0}
+    PrepareFeedback: {fileID: 0}
+    SaHitFeedback: {fileID: 0}
+    SaTrailMat: {fileID: 0}
+    EndParticles: {fileID: 0}
+    EndBloodBurst: {fileID: 0}
+    EndSFX: {fileID: 0}
+    EndBloodSFX: {fileID: 0}
+    PlayerAttackType: 0
+    PlayerAccumulateAttackType: 0
+    PlayerRollType: 0
+    PowerShieldAgainstAOE: {fileID: 0}
+    PowerShieldAgainstAOEOffset: {x: 0, y: 0, z: 0}
+    ShieldAgainstFeedBack: {fileID: 0}
+    ShieldDistance: 0
+    SmallShieldAgainstValue: 0
+    ShieldAttributesAng: 0
+    ShieldAttributesMoveSpeed: 0
+    ShieldMesh1: {fileID: 0}
+    ShieldMesh2: {fileID: 0}
+    AccumulateTime: 0
+    ShieldSkill_Against_Times: 0
+    ShieldSkill_Against_Interval: 0
+    surroundObj_FullHp: {fileID: 5379888945771094686, guid: 7d1cbe59b6598514b99f941a56221f54,
+      type: 3}
+    spawn_FullHp: {fileID: 105651884996131707, guid: 42b9336330881444191f5fbc5985f94e,
+      type: 3}
+    spawnCd: 1
+    offset_FullHp: {x: 0, y: 1, z: 1}
+    direction_FullHp: {x: 0, y: 0, z: 0}
+    isFollow_FullHp: 0

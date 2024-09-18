@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9574fe12fe374f48a47985e97b5fad3, type: 3}
+  m_Name: NPCTalk_StatueSpeed
+  m_EditorClassIdentifier: 
+  NpcTalkId: 0
+  NPCTalkName: NPC_Statue_Speed
+  TalkList:
+  - TalkType: 0
+    TalkText: NPC_StatueSpeed_Talk1
+    FalseTalkText: 
+    DropItemPool: {fileID: 0}
+    DropItemCount: 0
+    ShopTalkText: 
+    ShopGoodsCount: 0
+    ShopPools: []
+    YesOrNoText: 
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: 
+    GiveItemPool: {fileID: 0}
+    GoldValue: 0
+    DeductGoldText: 
+  - TalkType: 5
+    TalkText: 
+    FalseTalkText: 
+    DropItemPool: {fileID: 0}
+    DropItemCount: 3
+    ShopTalkText: "\u4F60\u60F3\u8981\u4EC0\u4E48\u6CD5\u7403\uFF1F"
+    ShopGoodsCount: 3
+    ShopPools:
+    - {fileID: 11400000, guid: ec48c7a7976f88445aad15e8b7801760, type: 2}
+    YesOrNoText: "\u662F\u5426\u5C06\u653B\u51FB\u9B42\u77F3\u5347\u7EA7\u4E3A\u66B4\u51FB\u9B42\u77F3\uFF1F\uFF08\u82E5\u6CA1\u6709\u5219\u83B7\u5F97\u4E00\u4E2A\u653B\u51FB\u9B42\u77F3\uFF09"
+    SyntheticText: 
+    ItemReplaceFormulas: {fileID: 0}
+    GiveText: NPC_StatueSpeed_Talk2
+    GiveItemPool: {fileID: 11400000, guid: a41b4945746102342bced1c3b33a5499, type: 2}
+    GoldValue: 0
+    DeductGoldText: 
+  RepeatTalk: []

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90505482f9a2cb342900563ebb29c9f7, type: 3}
+  m_Name: Buff_Curse
+  m_EditorClassIdentifier: 
+  ID: 107
+  Icon: {fileID: 21300000, guid: 639d8b929588e60408da886414dde914, type: 3}
+  Name: "\u8BC5\u5492"
+  Describe: "\u5EF6\u8FDF\u53D7\u5230\u4F24\u5BB3"
+  BuffOverlayType: 0
+  LifeCycle:
+    LifeCycleType: 0
+    Duration: 4
+    EnterRoomTimes: 0
+    EnterFightRoomTimes: 0
+    AttackTimes: 0
+    InjuredTimes: 0
+  TriggerData:
+    TriggerType: 0
+    IntervalTime: 3.95
+  EffectData:
+    BuffColor: {r: 0.15834971, g: 0.14297794, b: 0.254717, a: 1}
+    BuffColorType: 1
+    EffectType: 1
+    particleEffect: {fileID: 3813045180698805777, guid: 7bdebee0965084947bd209ed8c50b0e0,
+      type: 3}
+    MaxHpValue: 0
+    HpValue: -40
+    AttackPower: 0
+    AttackSpeed: 0
+    MoveSpeed: 0
+    AnimSpeed: 0
+    EnemyMoveSpeed: 0
+    InjureMultiplier: 0
+    HpTreatMultiplier: 0
+  OverlayEffectData:
+    EffectType: 0
+    Probability: 00000000000000000200000005000000
+    AOEAttackPower: 20
+    AOEAttackDistance: 2
+    AOEIsUseMove: 0
+    AOEMoveSpeed: 0
+    AOEMoveTime: 0
+    AOEParticle: {fileID: 0}
+    ParticleOffset: {x: 0, y: 0.6, z: 0}
+    AOEBuffObj: {fileID: 0}
+    AOEBuffLife:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0

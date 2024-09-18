@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af24cd7a5d4a56c4eb5ba05aeee814a3, type: 3}
+  m_Name: MoveInfo_KatanaOnHit
+  m_EditorClassIdentifier: 
+  AttackMove: {x: 0, y: -1}
+  MoveSpeed: 12
+  MoveTime: 0.1
+  MoveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.016067505
+      value: 0.648777
+      inSlope: 1.4326047
+      outSlope: 1.4326047
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.20670077
+      value: 0.9679159
+      inSlope: 0.11977106
+      outSlope: 0.11977106
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9149871
+      value: 0.12288609
+      inSlope: -2.3977191
+      outSlope: -2.3977191
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.038694818
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.001831
+      value: -0.0044555664
+      inSlope: -1.4663271
+      outSlope: -1.4663271
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

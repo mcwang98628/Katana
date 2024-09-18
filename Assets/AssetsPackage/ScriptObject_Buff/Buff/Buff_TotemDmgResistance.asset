@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90505482f9a2cb342900563ebb29c9f7, type: 3}
+  m_Name: Buff_TotemDmgResistance
+  m_EditorClassIdentifier: 
+  ID: 5
+  Icon: {fileID: 21300000, guid: e0f680a9f562448749fb02527d942ff2, type: 3}
+  Name: "\u56FE\u817E\u602A\u51CF\u4F24"
+  Describe: "\u56FE\u817E\u602A\u7ED9\u5C0F\u602A\u51CF\u4F24\u3002"
+  BuffOverlayType: 0
+  LifeCycle:
+    LifeCycleType: 0
+    Duration: 3
+    EnterRoomTimes: 0
+    EnterFightRoomTimes: 0
+    AttackTimes: 1
+    InjuredTimes: 0
+  TriggerData:
+    TriggerType: 0
+    IntervalTime: -1
+  EffectData:
+    EffectType: 9
+    particleEffect: {fileID: 4759498420866342713, guid: 6f8d29d89a18a7d4ea8bc28db97069e2,
+      type: 3}
+    MaxHpValue: 0
+    HpValue: -10
+    AttackPower: 100
+    AttackSpeed: 0
+    MoveSpeed: 5
+    AnimSpeed: 0
+    EnemyMoveSpeed: 0
+    InjureMultiplier: 0.5
+    HpTreatMultiplier: 0
+  OverlayEffectData:
+    EffectType: 0
+    Probability: 
+    AOEAttackPower: 0
+    AOEAttackDistance: 0
+    AOEIsUseMove: 0
+    AOEMoveSpeed: 0
+    AOEMoveTime: 0
+    AOEParticle: {fileID: 0}
+    ParticleOffset: {x: 0, y: 0, z: 0}
+    AOEBuffObj: {fileID: 0}
+    AOEBuffLife:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0

@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8322653752675298915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8322653752675298913}
+  - component: {fileID: -6447181475358982860}
+  - component: {fileID: 4135008836579721332}
+  - component: {fileID: -5571077534558348134}
+  m_Layer: 0
+  m_Name: Artifact_Servants_Obj_FireFlyNest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8322653752675298913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322653752675298915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8741353341325721040}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6447181475358982860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322653752675298915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099d18ee7ae13024baea11af798b5e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CreatureType: 3
+  LifeTime: 8
+--- !u!114 &4135008836579721332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322653752675298915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055ee83c27950e34a9a6a76642745549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireFly: {fileID: 3210869285117572188, guid: 13331a0b775cb994f817a5eb10281428, type: 3}
+  interval: 0.5
+  minFireFlyCount: 1
+  maxFireFlyCount: 1
+  nestEffect: {fileID: 8741353341325721040}
+--- !u!114 &-5571077534558348134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322653752675298915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cffcd2224d2626640bfbb9c4493c19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 4
+  NearDistance: 2
+  RotateMul: 2
+  SpeedLerpMul: 0.5
+  IdleActionType: 1
+--- !u!1001 &3053254807903761113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8322653752675298913}
+    m_Modifications:
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692101614731573855, guid: 7c7c45bae0db5f94d89861180d900185,
+        type: 3}
+      propertyPath: m_Name
+      value: FireFlyOrb
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7c45bae0db5f94d89861180d900185, type: 3}
+--- !u!4 &8741353341325721040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5985514385408249609, guid: 7c7c45bae0db5f94d89861180d900185,
+    type: 3}
+  m_PrefabInstance: {fileID: 3053254807903761113}
+  m_PrefabAsset: {fileID: 0}

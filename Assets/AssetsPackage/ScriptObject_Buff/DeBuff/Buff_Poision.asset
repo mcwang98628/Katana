@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90505482f9a2cb342900563ebb29c9f7, type: 3}
+  m_Name: Buff_Poision
+  m_EditorClassIdentifier: 
+  ID: 106
+  Icon: {fileID: 21300000, guid: f9e2db76533a47e448a38151adb5eeef, type: 3}
+  Name: "\u4E2D\u6BD2"
+  Describe: "\u6BCF\u79D2\u6536\u5230\u6301\u7EED\u4F24\u5BB3\n"
+  BuffOverlayType: 2
+  TriggerData:
+    TriggerType: 0
+    IntervalTime: 0.3
+  EffectData:
+    BuffColor: {r: 0.575233, g: 0, b: 1, a: 0.5019608}
+    BuffAimColor: {r: 0, g: 0, b: 0, a: 0}
+    BuffColorType: 0
+    EffectType: 1
+    particleEffect: {fileID: 5934760288961008532, guid: 1b34ae21ae3d7b84da84d6a5bf4503a3,
+      type: 3}
+    MaxHpValue: 0
+    HpValue: -12
+    AttackPower: 0
+    AttackSpeed: 0
+    MoveSpeed: 0
+    AnimSpeed: 0
+    EnemyMoveSpeed: 0
+    InjureMultiplier: 0
+    HpTreatMultiplier: 0
+    SuckBloodValue: 0
+  OverlayEffectData:
+    EffectType: 0
+    Probability: 
+    AOEAttackPower: 0
+    AOEAttackDistance: 0
+    AOEIsUseMove: 0
+    AOEMoveSpeed: 0
+    AOEMoveTime: 0
+    AOEParticle: {fileID: 0}
+    ParticleOffset: {x: 0, y: 0, z: 0}
+    AOEBuffObj: {fileID: 0}
+    AOEBuffLife:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0

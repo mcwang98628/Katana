@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79ccd2fad80afb4fbd1299e40cab6f9, type: 3}
+  m_Name: Feedback_Player_OnDeath
+  m_EditorClassIdentifier: 
+  UseCameraShake: 1
+  CameraShakeAmplitude: 0.25
+  CameraShakeDuration: 1
+  AddScreenColor: 1
+  ScreenColor: {r: 0.8867924, g: 0.012548926, b: 0.012548926, a: 0.8}
+  AddMul: 0.1
+  UseCameraZoom: 0
+  ZoomValue: 0
+  EnterZoomTime: 0
+  ExitZoomTime: 0
+  ZoomDuration: 0
+  UseAudio: 1
+  AudioClips: []
+  SFXPriority: 0
+  UseChangeColor: 0
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  ColorDuration: 0.2
+  UseChangeRimColor: 0
+  RimColor: {r: 0, g: 0, b: 0, a: 0}
+  RimRange: 0
+  RimColorDuration: 0
+  UsePauseFrame: 0
+  PauseFrameDuration: 1
+  UseTimeScale: 1
+  TimeScaleDuration: 0.2
+  TimeScaleValue: 0.3
+  UseModelShake: 0
+  ModelShakeAmplitude: 30
+  ModelShakeDuration: 1
+  ModelShakeTimeBetween: 0

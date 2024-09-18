@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mat_UI_MainBackground
+  m_Shader: {fileID: 4800000, guid: 84c7ebd67b9d7434dbbfa46e2975eec2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _IconTexture:
+        m_Texture: {fileID: 2800000, guid: 0dfed5604c2c34ea9a19864f0c2674ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: bcba14e1f65ef4e0b9f02abd7c8c84c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _IconScale: 2
+    - _MoveSpeed: -0.2
+    - _RotateAngle: 45
+    - _Vignette: 0.4
+    m_Colors:
+    - _BackgroundColor: {r: 0.75294125, g: 0, b: 0, a: 1}
+    - _IconColor: {r: 0.6792453, g: 0.03946157, b: 0, a: 1}

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90505482f9a2cb342900563ebb29c9f7, type: 3}
+  m_Name: Buff_AttackEnhance
+  m_EditorClassIdentifier: 
+  ID: 1
+  Icon: {fileID: 21300000, guid: 75440cffd4c314d3089a8134f3840aaa, type: 3}
+  Name: "\u653B\u51FB\u5F3A\u5316"
+  Describe: "\u589E\u52A0\u653B\u51FB\u529B"
+  BuffOverlayType: 0
+  LifeCycle:
+    LifeCycleType: 0
+    Duration: 0
+    EnterRoomTimes: 0
+    EnterFightRoomTimes: 0
+    AttackTimes: 0
+    InjuredTimes: 0
+  TriggerData:
+    TriggerType: 0
+    IntervalTime: -1
+  EffectData:
+    BuffColor: {r: 0, g: 0, b: 0, a: 0}
+    BuffColorType: 0
+    EffectType: 2
+    particleEffect: {fileID: 0}
+    MaxHpValue: 0
+    HpValue: -10
+    AttackPower: 40
+    AttackSpeed: 0
+    MoveSpeed: 0
+    AnimSpeed: 0
+    EnemyMoveSpeed: 0
+    InjureMultiplier: 0
+    HpTreatMultiplier: 0
+  OverlayEffectData:
+    EffectType: 0
+    Probability: 
+    AOEAttackPower: 0
+    AOEAttackDistance: 0
+    AOEIsUseMove: 0
+    AOEMoveSpeed: 0
+    AOEMoveTime: 0
+    AOEParticle: {fileID: 0}
+    ParticleOffset: {x: 0, y: 0, z: 0}
+    AOEBuffObj: {fileID: 0}
+    AOEBuffLife:
+      LifeCycleType: 0
+      Duration: 0
+      EnterRoomTimes: 0
+      EnterFightRoomTimes: 0
+      AttackTimes: 0
+      InjuredTimes: 0

@@ -1,0 +1,635 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8145e4002c84b284f8f1c34fe0ae4707, type: 3}
+  m_Name: ChapterData_Adventure
+  m_EditorClassIdentifier: 
+  StartEnvironment: {fileID: 11400000, guid: a41b7461341589245b9d276db7f13753, type: 2}
+  EnvironmentData:
+  - {fileID: 11400000, guid: e23ef898db2ec1043b5452dae4dee4fe, type: 2}
+  - {fileID: 11400000, guid: a6adaeac89a0d7e4cb627192cdaca827, type: 2}
+  - {fileID: 11400000, guid: 4d4859a3677edbd4f9466143e97917cd, type: 2}
+  - {fileID: 11400000, guid: d8534cdb35b7dd247afe74d263fd274a, type: 2}
+  - {fileID: 11400000, guid: 5b6415ae11dce0d48abed111334e6fd2, type: 2}
+  - {fileID: 11400000, guid: 9a2011f4f1df80443bc52fe2c034863c, type: 2}
+  - {fileID: 11400000, guid: a41b7461341589245b9d276db7f13753, type: 2}
+  - {fileID: 11400000, guid: a4ede100fc357d24b8fb3c603947c917, type: 2}
+  - {fileID: 11400000, guid: 50848a9e4f5e5dd41823b39bb741ce21, type: 2}
+  - {fileID: 11400000, guid: c4f03032544ed094bae9bdd7f6687157, type: 2}
+  - {fileID: 11400000, guid: 6063173bd42daba42ab960d0c7c1d019, type: 2}
+  - {fileID: 11400000, guid: f168476bb40405c4285d5781d666ea43, type: 2}
+  - {fileID: 11400000, guid: 9e50b58771ee3b04e848f43d4b27e652, type: 2}
+  - {fileID: 11400000, guid: 2c3c10a27a9da074fa970ad83028d101, type: 2}
+  - {fileID: 11400000, guid: 27b752c3aa384c740948a95dc09e25e1, type: 2}
+  - {fileID: 11400000, guid: 2ef81240299077e459bc17313b16d84c, type: 2}
+  - {fileID: 11400000, guid: d31465197b503064a947742ec9d1d58b, type: 2}
+  - {fileID: 11400000, guid: 954c2c03c73831a4980d2e0e1b75843b, type: 2}
+  - {fileID: 11400000, guid: e359f8191821a874599222d09d3d4d04, type: 2}
+  - {fileID: 11400000, guid: da7b9fcc452bbd346bfa261e8f802e6e, type: 2}
+  StartRoom: {fileID: -5110107240740190330, guid: f62da46edcb432b4886d2bce60e0633d,
+    type: 3}
+  AdventureFloorData:
+  - ChapterID: 1
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: c815dcc98dd35ef498900aa3025947db, type: 3}
+      - {fileID: -5110107240740190330, guid: 4f4bd7bae3a4fcd47ae3fcfd5d7384f2, type: 3}
+      - {fileID: -5110107240740190330, guid: 95269ee4c77f77041a7c1b373da065d8, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 28619fa4c322d0c4a8c03bcacaa0c479, type: 3}
+      - {fileID: 6316813351459023037, guid: e42af1b784bfbd84eba7ddcaecbc15c0, type: 3}
+      - {fileID: 6316813351459023037, guid: 84e0c25fcb4a8574f95cc40f3ad6b632, type: 3}
+      - {fileID: 6316813351459023037, guid: d2a28ce6f7ac8cb41be4435aedf54b8f, type: 3}
+      - {fileID: 6316813351459023037, guid: 5291e995a2bf8874cb44fa6514c757e9, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 8a3614d49d7beb4498525388f3cc7109, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 024af8c9ed50cbe4f9fc4f27193c2b1d,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 77f1651a3de737d4eac0546fee2ecb8a,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss: []
+  - ChapterID: 1
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: c815dcc98dd35ef498900aa3025947db, type: 3}
+      - {fileID: -5110107240740190330, guid: 4f4bd7bae3a4fcd47ae3fcfd5d7384f2, type: 3}
+      - {fileID: -5110107240740190330, guid: 95269ee4c77f77041a7c1b373da065d8, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 6eecbc87125f19b4caa97732c8fdd82c, type: 3}
+      - {fileID: 7658876454569440017, guid: 5c4e8bb3133fb73419ce97649764514e, type: 3}
+      - {fileID: 7658876454569440017, guid: 0de6aae9a2da9c54bb505700b8ec06d7, type: 3}
+      - {fileID: 7658876454569440017, guid: b1ebbe6ef8c6a404abe8fe381ab2d890, type: 3}
+      - {fileID: 7658876454569440017, guid: 24f821b4d548d534996f145f497ac599, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 8a3614d49d7beb4498525388f3cc7109, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 024af8c9ed50cbe4f9fc4f27193c2b1d,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 77f1651a3de737d4eac0546fee2ecb8a,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      EnemyList_Boss:
+      - {fileID: 4236465261131774203, guid: 966171572b4bff24782116e508f10c15, type: 3}
+  - ChapterID: 1
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: c815dcc98dd35ef498900aa3025947db, type: 3}
+      - {fileID: -5110107240740190330, guid: 4f4bd7bae3a4fcd47ae3fcfd5d7384f2, type: 3}
+      - {fileID: -5110107240740190330, guid: 95269ee4c77f77041a7c1b373da065d8, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 4f162cb762e7b454395894c505539965, type: 3}
+      - {fileID: 7658876454569440017, guid: e4ce31ec733994c4eadf41e58df13103, type: 3}
+      - {fileID: 7658876454569440017, guid: e065149132492f845844789a3f8adc0c, type: 3}
+      - {fileID: 7658876454569440017, guid: d0ebdc1f671eb1640ac9bee8405aae78, type: 3}
+      - {fileID: 7658876454569440017, guid: f817478930e8e614cac222f7053b8665, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 8a3614d49d7beb4498525388f3cc7109, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 024af8c9ed50cbe4f9fc4f27193c2b1d,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 77f1651a3de737d4eac0546fee2ecb8a,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      - {fileID: 802824655593326489, guid: 3e1758034f6d0d849bfe9ad1a307c160, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      EnemyList_Boss: []
+  - ChapterID: 2
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 49a3844e271bf7c448b8f8ad4317a760, type: 3}
+      - {fileID: -5110107240740190330, guid: 0d44a7ce0f175584f82d49df0f7e3775, type: 3}
+      - {fileID: -5110107240740190330, guid: 7ca3bd9643ed58443b825bb1985762f6, type: 3}
+      - {fileID: -5110107240740190330, guid: cfc63313b78efdc4db2166c0372739bd, type: 3}
+      - {fileID: -5110107240740190330, guid: 8999bac32f3d88e4dae5d15e7a5edc4a, type: 3}
+      FightRooms:
+      - {fileID: 6316813351459023037, guid: bd6f1c7dbd2d98940b54c8782b126231, type: 3}
+      - {fileID: 6316813351459023037, guid: c695e79a57dee8e489c7c5c818b1e05e, type: 3}
+      - {fileID: 6316813351459023037, guid: 120d2385bd83b0849be496cf8cfb4601, type: 3}
+      - {fileID: 6316813351459023037, guid: f3607d37a5178c841a3771ef33f7b7b0, type: 3}
+      - {fileID: 6316813351459023037, guid: 8215321505caa2d4ba08616812dcaf77, type: 3}
+      - {fileID: 6316813351459023037, guid: 3a84477a271117142a0cc0248df5f0d0, type: 3}
+      BossFightRooms:
+      - {fileID: 4672927855625954915, guid: 24ec5b4fabbfc4590aa471cc73b80059, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 43ae1aff0feed4e4f819088027923c64,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: b5d6449d632f64b46a975cff5e9747d1,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      EnemyList_Boss: []
+  - ChapterID: 2
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 49a3844e271bf7c448b8f8ad4317a760, type: 3}
+      - {fileID: -5110107240740190330, guid: 0d44a7ce0f175584f82d49df0f7e3775, type: 3}
+      - {fileID: -5110107240740190330, guid: 7ca3bd9643ed58443b825bb1985762f6, type: 3}
+      - {fileID: -5110107240740190330, guid: cfc63313b78efdc4db2166c0372739bd, type: 3}
+      - {fileID: -5110107240740190330, guid: 8999bac32f3d88e4dae5d15e7a5edc4a, type: 3}
+      FightRooms:
+      - {fileID: 6316813351459023037, guid: 3f23c9ad63aa346479662a87b30a5c14, type: 3}
+      - {fileID: 6316813351459023037, guid: d2f76af02ff664a44b16f75c04abf2b4, type: 3}
+      - {fileID: 6316813351459023037, guid: 9326e5aee66da414fa5c2d6d3cdfc738, type: 3}
+      - {fileID: 6316813351459023037, guid: 833da9023a4d7064c9aae5a4635357d5, type: 3}
+      - {fileID: 6316813351459023037, guid: fa564acc17983c1498652256b0a7e2b3, type: 3}
+      - {fileID: 6316813351459023037, guid: a26158a3658f04e49bf1d4eac0ba7d78, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 2f9e9955c88839b41a9bd7c5956ea2d8, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 43ae1aff0feed4e4f819088027923c64,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: b5d6449d632f64b46a975cff5e9747d1,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss:
+      - {fileID: 4236465261131774203, guid: 966171572b4bff24782116e508f10c15, type: 3}
+  - ChapterID: 2
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 49a3844e271bf7c448b8f8ad4317a760, type: 3}
+      - {fileID: -5110107240740190330, guid: 0d44a7ce0f175584f82d49df0f7e3775, type: 3}
+      - {fileID: -5110107240740190330, guid: 7ca3bd9643ed58443b825bb1985762f6, type: 3}
+      - {fileID: -5110107240740190330, guid: cfc63313b78efdc4db2166c0372739bd, type: 3}
+      - {fileID: -5110107240740190330, guid: 8999bac32f3d88e4dae5d15e7a5edc4a, type: 3}
+      FightRooms:
+      - {fileID: 6316813351459023037, guid: eda818520baa321488c06fed18ca55b8, type: 3}
+      - {fileID: 6316813351459023037, guid: 0db6b4300119e15489e3a3f0ae867f27, type: 3}
+      - {fileID: 6316813351459023037, guid: a82d4a5dcb302994c834c1c78a1ffec1, type: 3}
+      - {fileID: 6316813351459023037, guid: 8148158f4f58a6340bdff4d505698d6c, type: 3}
+      - {fileID: 6316813351459023037, guid: a22122c60a1d56648a26e5c05aa973be, type: 3}
+      - {fileID: 6316813351459023037, guid: 9e2e9f35e4016f24d85fdbba97a7c86a, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 2f9e9955c88839b41a9bd7c5956ea2d8, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 43ae1aff0feed4e4f819088027923c64,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: b5d6449d632f64b46a975cff5e9747d1,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 802824655593326489, guid: 3e1758034f6d0d849bfe9ad1a307c160, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss:
+      - {fileID: 1374967443483543828, guid: 2cd0d07337bf0194f90dc6ae3b4ee04f, type: 3}
+  - ChapterID: 2
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 49a3844e271bf7c448b8f8ad4317a760, type: 3}
+      - {fileID: -5110107240740190330, guid: 0d44a7ce0f175584f82d49df0f7e3775, type: 3}
+      - {fileID: -5110107240740190330, guid: 7ca3bd9643ed58443b825bb1985762f6, type: 3}
+      - {fileID: -5110107240740190330, guid: cfc63313b78efdc4db2166c0372739bd, type: 3}
+      - {fileID: -5110107240740190330, guid: 8999bac32f3d88e4dae5d15e7a5edc4a, type: 3}
+      FightRooms:
+      - {fileID: 6316813351459023037, guid: 1c9b75aabf0aa994fbf29c7d3cdf524c, type: 3}
+      - {fileID: 6316813351459023037, guid: 3126a65a1d57eab47b51eba3b7e89b14, type: 3}
+      - {fileID: 6316813351459023037, guid: 6158fa2eeab80bc4db6916efac985517, type: 3}
+      - {fileID: 6316813351459023037, guid: 249f082fa2430fb4aa2349c42175dbc2, type: 3}
+      - {fileID: 6316813351459023037, guid: fb08a76d2a9b4e74db194654110cb5f7, type: 3}
+      - {fileID: 6316813351459023037, guid: 4297afd936195be4fb5e5c843cc27107, type: 3}
+      - {fileID: 6316813351459023037, guid: 3842b5f84c1b6ca489832c45c5158802, type: 3}
+      BossFightRooms:
+      - {fileID: 4672927855625954915, guid: 24ec5b4fabbfc4590aa471cc73b80059, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 43ae1aff0feed4e4f819088027923c64,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: b5d6449d632f64b46a975cff5e9747d1,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      EnemyList_Boss:
+      - {fileID: 7104322208088515194, guid: bdb9c79cdf40f3d4b8cef79235bdca50, type: 3}
+  - ChapterID: 3
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: a7879e5db4047a94db301ccadf2fa287, type: 3}
+      - {fileID: -5110107240740190330, guid: 66747e79f8de3b44f9ef56fd51d8952c, type: 3}
+      - {fileID: -5110107240740190330, guid: 3eacda83a98eb674d89d1d672bdb9ba4, type: 3}
+      - {fileID: -5110107240740190330, guid: 298f0c6db24441040a72f4f0b4bdebe4, type: 3}
+      - {fileID: -5110107240740190330, guid: 7583941291d91aa49b1d68edf694af59, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 7f4c194c659eefc498af9cc01f9d0cd1, type: 3}
+      - {fileID: 7658876454569440017, guid: b0e798abc53a5c1459920cbb05c4d51d, type: 3}
+      - {fileID: 7658876454569440017, guid: da02436e40e408c41b4ce8db82453fc6, type: 3}
+      - {fileID: 7658876454569440017, guid: ba16e196a492c104393773a3ac090586, type: 3}
+      - {fileID: 7658876454569440017, guid: 93082b9fb9465cd42ad58d60910e3d84, type: 3}
+      - {fileID: 7658876454569440017, guid: 2e5e769f72246e245a29c6738316f98e, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 7646df820c12fde4c9018bbff1d4f63e, type: 3}
+      - {fileID: 7658876454569440017, guid: 337d9c4418c2aaa48b4d9ef3336c782c, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 65d3fc71acde71349ab75f9ba1d59d38,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 6477559a1f9a3044880db51ce719d3cf,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 802824655593326489, guid: 3e1758034f6d0d849bfe9ad1a307c160, type: 3}
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss: []
+  - ChapterID: 3
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: a7879e5db4047a94db301ccadf2fa287, type: 3}
+      - {fileID: -5110107240740190330, guid: 66747e79f8de3b44f9ef56fd51d8952c, type: 3}
+      - {fileID: -5110107240740190330, guid: 3eacda83a98eb674d89d1d672bdb9ba4, type: 3}
+      - {fileID: -5110107240740190330, guid: 298f0c6db24441040a72f4f0b4bdebe4, type: 3}
+      - {fileID: -5110107240740190330, guid: 7583941291d91aa49b1d68edf694af59, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 780d422e1dd8c34459387b415f394f0e, type: 3}
+      - {fileID: 7658876454569440017, guid: ca99b19653961ea45b622c6351b2bd6a, type: 3}
+      - {fileID: 7658876454569440017, guid: fab7f0933129d5041a117e49e70fe540, type: 3}
+      - {fileID: 7658876454569440017, guid: 79b80f779cabbc843948c30b9dc82aad, type: 3}
+      - {fileID: 7658876454569440017, guid: 64cbeae8ac883f748ba9f30f91cf3572, type: 3}
+      - {fileID: 7658876454569440017, guid: 74b55e978d06ed947bad740089cf29a1, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 337d9c4418c2aaa48b4d9ef3336c782c, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 65d3fc71acde71349ab75f9ba1d59d38,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 6477559a1f9a3044880db51ce719d3cf,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss:
+      - {fileID: 2867336527006730470, guid: 41e60e5a97a350d4fa3010523f04e2fa, type: 3}
+  - ChapterID: 3
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: a7879e5db4047a94db301ccadf2fa287, type: 3}
+      - {fileID: -5110107240740190330, guid: 66747e79f8de3b44f9ef56fd51d8952c, type: 3}
+      - {fileID: -5110107240740190330, guid: 3eacda83a98eb674d89d1d672bdb9ba4, type: 3}
+      - {fileID: -5110107240740190330, guid: 298f0c6db24441040a72f4f0b4bdebe4, type: 3}
+      - {fileID: -5110107240740190330, guid: 7583941291d91aa49b1d68edf694af59, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 24a89c44b3769be41b26c6e532751636, type: 3}
+      - {fileID: 7658876454569440017, guid: a46f0652c86c0f846972444807534106, type: 3}
+      - {fileID: 7658876454569440017, guid: 1a614e43d3ed9024286a4dfbd4d7433f, type: 3}
+      - {fileID: 7658876454569440017, guid: 0ef361effaa57d043b44d96bcba1a024, type: 3}
+      - {fileID: 7658876454569440017, guid: 9529b5697e743e5498722696074941b3, type: 3}
+      - {fileID: 7658876454569440017, guid: d5644ec1e3a4e3348942b5844531036e, type: 3}
+      - {fileID: 7658876454569440017, guid: 9d72e919ac879d5478fb277b75368f7d, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 337d9c4418c2aaa48b4d9ef3336c782c, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 65d3fc71acde71349ab75f9ba1d59d38,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 6477559a1f9a3044880db51ce719d3cf,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss:
+      - {fileID: 1573771742490667052, guid: 6dfbf249b19f4864d8f0bac23b82cd67, type: 3}
+  - ChapterID: 3
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: a7879e5db4047a94db301ccadf2fa287, type: 3}
+      - {fileID: -5110107240740190330, guid: 66747e79f8de3b44f9ef56fd51d8952c, type: 3}
+      - {fileID: -5110107240740190330, guid: 3eacda83a98eb674d89d1d672bdb9ba4, type: 3}
+      - {fileID: -5110107240740190330, guid: 298f0c6db24441040a72f4f0b4bdebe4, type: 3}
+      - {fileID: -5110107240740190330, guid: 7583941291d91aa49b1d68edf694af59, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 80649b5986bdb544c96780bfa9d101b6, type: 3}
+      - {fileID: 7658876454569440017, guid: 10eb77b4702f8f5419520f30a18c8d86, type: 3}
+      - {fileID: 7658876454569440017, guid: 9ec8fb32bfa42bb498601792b2b81647, type: 3}
+      - {fileID: 7658876454569440017, guid: ff2d0261f91b99b42a0e35f7494da6b0, type: 3}
+      - {fileID: 7658876454569440017, guid: 9a9bfb75fc467df4e941e4ffa14ddd1e, type: 3}
+      - {fileID: 7658876454569440017, guid: 44147b67b0f115944820edbe739dfdf1, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 7646df820c12fde4c9018bbff1d4f63e, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 65d3fc71acde71349ab75f9ba1d59d38,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: 6477559a1f9a3044880db51ce719d3cf,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 802824655593326489, guid: 3e1758034f6d0d849bfe9ad1a307c160, type: 3}
+      - {fileID: 8789304508295701759, guid: d04cad80b28b95b4fa0b81620e235e25, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      EnemyList_Boss:
+      - {fileID: 2867336527006730470, guid: f45bd657177d51d4b804522dbd566954, type: 3}
+  - ChapterID: 4
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 95ae123cb341d564dbd31c61830291f5, type: 3}
+      - {fileID: -5110107240740190330, guid: 5bc03829781bbf74e84d06898868e0f3, type: 3}
+      - {fileID: -5110107240740190330, guid: 7bc2a5cee0335984ca87eb8b3bdee4f0, type: 3}
+      - {fileID: -5110107240740190330, guid: 3892baeb2e99f994696904f5fac158f3, type: 3}
+      - {fileID: -5110107240740190330, guid: e9e98485e448acb4c9dd00e52fbcc4af, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: b80713c0fcdc5ed45865f2798c5368b5, type: 3}
+      - {fileID: 7658876454569440017, guid: 2615b739fa73a7a47a50ed53d4f98fe1, type: 3}
+      - {fileID: 7658876454569440017, guid: 5caa35dced0fc154a903279a2993aedb, type: 3}
+      - {fileID: 7658876454569440017, guid: 3f4e7c6dc31f58d45813e27adaa5d7b0, type: 3}
+      - {fileID: 7658876454569440017, guid: 902170b3f8a98c346b72ee9ae07efc61, type: 3}
+      - {fileID: 7658876454569440017, guid: be5806a29b08b194994fb42a2bf85286, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 536aa998a38d82447b42cc6d70a09506, type: 3}
+      EmptyShopRoom: {fileID: 1247003917459881163, guid: 0febe6b0046afe14e94ae926ca91127a,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 1247003917459881163, guid: bd4432f6825f9234fa57d7fe5709ccfa,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      EnemyList_Boss:
+      - {fileID: 1636094439300246860, guid: 7d4b96c090498364cbdd307cd90607bb, type: 3}
+  - ChapterID: 4
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 95ae123cb341d564dbd31c61830291f5, type: 3}
+      - {fileID: -5110107240740190330, guid: 5bc03829781bbf74e84d06898868e0f3, type: 3}
+      - {fileID: -5110107240740190330, guid: 7bc2a5cee0335984ca87eb8b3bdee4f0, type: 3}
+      - {fileID: -5110107240740190330, guid: 3892baeb2e99f994696904f5fac158f3, type: 3}
+      - {fileID: -5110107240740190330, guid: e9e98485e448acb4c9dd00e52fbcc4af, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: fefa5e20254c0574089408847602a66a, type: 3}
+      - {fileID: 7658876454569440017, guid: e30a89e0333df9942aa7881d21f2b9c6, type: 3}
+      - {fileID: 7658876454569440017, guid: 650d2122fbac4e74898eaf03c0d2c13b, type: 3}
+      - {fileID: 7658876454569440017, guid: 2d80c1603c01c8646925572b8aae346d, type: 3}
+      - {fileID: 7658876454569440017, guid: d3e828b39b2010a44b4be4bd643b7321, type: 3}
+      - {fileID: 7658876454569440017, guid: f3e9a83c33ed84e468f5d7f341d3acfa, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 536aa998a38d82447b42cc6d70a09506, type: 3}
+      EmptyShopRoom: {fileID: 1247003917459881163, guid: 0febe6b0046afe14e94ae926ca91127a,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 1247003917459881163, guid: bd4432f6825f9234fa57d7fe5709ccfa,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: db50cc808e3fa4647921670e0a464d36, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      EnemyList_Boss:
+      - {fileID: 1636094439300246860, guid: 8d14f8059ac289f4ea54133804b33f3e, type: 3}
+  - ChapterID: 4
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 95ae123cb341d564dbd31c61830291f5, type: 3}
+      - {fileID: -5110107240740190330, guid: 5bc03829781bbf74e84d06898868e0f3, type: 3}
+      - {fileID: -5110107240740190330, guid: 7bc2a5cee0335984ca87eb8b3bdee4f0, type: 3}
+      - {fileID: -5110107240740190330, guid: 3892baeb2e99f994696904f5fac158f3, type: 3}
+      - {fileID: -5110107240740190330, guid: e9e98485e448acb4c9dd00e52fbcc4af, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 199f212b09e7ac4488f5321353f3d6a3, type: 3}
+      - {fileID: 7658876454569440017, guid: d8f739acee9ad0b4cbc2b7dcd28cdfd0, type: 3}
+      - {fileID: 7658876454569440017, guid: 4f68651e58ff2af48869c71d7cd0b4d7, type: 3}
+      - {fileID: 7658876454569440017, guid: d54f3c2a37a8ea14a81638a8c8493ffa, type: 3}
+      - {fileID: 7658876454569440017, guid: cc3bb6d0da457d24fb7cf483bc41c8f1, type: 3}
+      - {fileID: 7658876454569440017, guid: 985b5e0117e73b641adde8677714f785, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 503533d9d8fe8fe41acfcd69a3927955, type: 3}
+      EmptyShopRoom: {fileID: 1247003917459881163, guid: 0febe6b0046afe14e94ae926ca91127a,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 1247003917459881163, guid: bd4432f6825f9234fa57d7fe5709ccfa,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      - {fileID: 4979438894992673501, guid: 70ae7eae1fe831740a56efb6d7d8046d, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: db50cc808e3fa4647921670e0a464d36, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      EnemyList_Boss:
+      - {fileID: 4979438894992673501, guid: 6c22ff708e87ab947b0309edd1824fe2, type: 3}
+  - ChapterID: 4
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 95ae123cb341d564dbd31c61830291f5, type: 3}
+      - {fileID: -5110107240740190330, guid: 5bc03829781bbf74e84d06898868e0f3, type: 3}
+      - {fileID: -5110107240740190330, guid: 7bc2a5cee0335984ca87eb8b3bdee4f0, type: 3}
+      - {fileID: -5110107240740190330, guid: 3892baeb2e99f994696904f5fac158f3, type: 3}
+      - {fileID: -5110107240740190330, guid: e9e98485e448acb4c9dd00e52fbcc4af, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: d74a852a8bf3f584890df0697cf784b0, type: 3}
+      - {fileID: 7658876454569440017, guid: c2fe73dc5cfed414b9c466df48678e53, type: 3}
+      - {fileID: 7658876454569440017, guid: 7e9a1c25975333844a9c3b580e28cd47, type: 3}
+      - {fileID: 7658876454569440017, guid: 1013d80b60894fa4abe21a3874bf8a3c, type: 3}
+      - {fileID: 7658876454569440017, guid: e18432deabf58d740bb8a3c4effb2cfc, type: 3}
+      - {fileID: 7658876454569440017, guid: 5dc485e98b12e274f8847e0fad85c51b, type: 3}
+      - {fileID: 7658876454569440017, guid: 1ed205c6488be0a42854b160f8c81b2e, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 536aa998a38d82447b42cc6d70a09506, type: 3}
+      - {fileID: 7658876454569440017, guid: 503533d9d8fe8fe41acfcd69a3927955, type: 3}
+      EmptyShopRoom: {fileID: 1247003917459881163, guid: 0febe6b0046afe14e94ae926ca91127a,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 1247003917459881163, guid: bd4432f6825f9234fa57d7fe5709ccfa,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: 98df640d2a95dba42991d392bf533418, type: 3}
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 802824655593326489, guid: 3e1758034f6d0d849bfe9ad1a307c160, type: 3}
+      - {fileID: 8073514175751721980, guid: a1c66c141dfd16748b1296fd2bb9285c, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 8585467103521417701, guid: ec9a39e5cdc9daf4a991850178dd0b17, type: 3}
+      - {fileID: 2867336527006730470, guid: bf592a5b040616c4c97a29491caa1559, type: 3}
+      - {fileID: 4979438894992673501, guid: fbdcecce4ea02f74896a899ea59e983a, type: 3}
+      EnemyList_Boss: []
+  - ChapterID: 5
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 12732acb58364b2438218ab23f8593a4, type: 3}
+      - {fileID: -5110107240740190330, guid: 01091064c1d9f324088b647f84d65f55, type: 3}
+      - {fileID: -5110107240740190330, guid: 4c6fd9c9155e63646903f3fec428c78c, type: 3}
+      - {fileID: -5110107240740190330, guid: 1ad37bd0cd26c7740a55dcb189fdf4f3, type: 3}
+      - {fileID: -5110107240740190330, guid: d49deffaa3840484ba61bab9fdce270e, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 0787837c77bfe394fa62444ef646406d, type: 3}
+      - {fileID: 7658876454569440017, guid: 3216efde188bd44419ce6a7c66fc91b7, type: 3}
+      - {fileID: 7658876454569440017, guid: 49aa25b5fcb27c84daefd955249ee3aa, type: 3}
+      - {fileID: 7658876454569440017, guid: 4d01fb7313167c14086901209729e20f, type: 3}
+      - {fileID: 7658876454569440017, guid: fc09c370d1651b8449c73a097c6891f9, type: 3}
+      - {fileID: 7658876454569440017, guid: 36da6f8742885e742979855a9083bc32, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 579cd4d9598ed154289228d955c2a9ab, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 80e89237a8b7d1746b7aff371d2d2a41,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: aa5dae7c305f1c442a1695f338f25f08,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 4979438894992673501, guid: 96212f16d57939041bf47f1b90bb5a02, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: dbf918934cffbcb49a4fd301b9088ec1, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: 68a3ce5d04b11dd49869b803b11e1681, type: 3}
+      EnemyList_Boss:
+      - {fileID: 4979438894992673501, guid: 4c34a62cddf29bb499aa3416f7781a16, type: 3}
+  - ChapterID: 5
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 12732acb58364b2438218ab23f8593a4, type: 3}
+      - {fileID: -5110107240740190330, guid: 01091064c1d9f324088b647f84d65f55, type: 3}
+      - {fileID: -5110107240740190330, guid: 4c6fd9c9155e63646903f3fec428c78c, type: 3}
+      - {fileID: -5110107240740190330, guid: 1ad37bd0cd26c7740a55dcb189fdf4f3, type: 3}
+      - {fileID: -5110107240740190330, guid: d49deffaa3840484ba61bab9fdce270e, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: e4f55fc56259179478f859bef04b5cdd, type: 3}
+      - {fileID: 7658876454569440017, guid: fb18e17ac301199458dde67a93cfee19, type: 3}
+      - {fileID: 7658876454569440017, guid: e817935514f5caa45a6889cb7acbff5b, type: 3}
+      - {fileID: 7658876454569440017, guid: 8fa937b7b9ef59e4983aa3055866d27f, type: 3}
+      - {fileID: 7658876454569440017, guid: 311f86d85fb4d7b4e887b1601217f0bf, type: 3}
+      - {fileID: 7658876454569440017, guid: c4c31f55159699d45a098cadb2da71cc, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 579cd4d9598ed154289228d955c2a9ab, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 80e89237a8b7d1746b7aff371d2d2a41,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: aa5dae7c305f1c442a1695f338f25f08,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 8789304508295701759, guid: 889eac86a535ae64db58bf51af88901f, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: dbf918934cffbcb49a4fd301b9088ec1, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: 68a3ce5d04b11dd49869b803b11e1681, type: 3}
+      EnemyList_Boss:
+      - {fileID: 8789304508295701759, guid: 6e3fd75fef65cd74d8843875f19a820d, type: 3}
+  - ChapterID: 5
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 12732acb58364b2438218ab23f8593a4, type: 3}
+      - {fileID: -5110107240740190330, guid: 01091064c1d9f324088b647f84d65f55, type: 3}
+      - {fileID: -5110107240740190330, guid: 4c6fd9c9155e63646903f3fec428c78c, type: 3}
+      - {fileID: -5110107240740190330, guid: 1ad37bd0cd26c7740a55dcb189fdf4f3, type: 3}
+      - {fileID: -5110107240740190330, guid: d49deffaa3840484ba61bab9fdce270e, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 1479b7b2980bfe144909e497951220ff, type: 3}
+      - {fileID: 7658876454569440017, guid: 3dc3a6fee86fd1846a97a417f470aa75, type: 3}
+      - {fileID: 7658876454569440017, guid: 4bf3d8ec32c3a514886907af023486da, type: 3}
+      - {fileID: 7658876454569440017, guid: 8164e8e39bdfdd648b4a037601bebb62, type: 3}
+      - {fileID: 7658876454569440017, guid: d6376cda7b6a9104582461361cf6203e, type: 3}
+      - {fileID: 7658876454569440017, guid: fb6c29dd5d92ddb41b97826a7eb30dcb, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: f93c52537c4843b4f86f42c53ab2cb23, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 80e89237a8b7d1746b7aff371d2d2a41,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: aa5dae7c305f1c442a1695f338f25f08,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 8789304508295701759, guid: 889eac86a535ae64db58bf51af88901f, type: 3}
+      - {fileID: 4979438894992673501, guid: 96212f16d57939041bf47f1b90bb5a02, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: dbf918934cffbcb49a4fd301b9088ec1, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: 68a3ce5d04b11dd49869b803b11e1681, type: 3}
+      EnemyList_Boss:
+      - {fileID: 4979438894992673501, guid: 24680bfb7ebae4a498ab8fd388d3a575, type: 3}
+  - ChapterID: 5
+    RoomData:
+      StartRooms:
+      - {fileID: -5110107240740190330, guid: 12732acb58364b2438218ab23f8593a4, type: 3}
+      - {fileID: -5110107240740190330, guid: 01091064c1d9f324088b647f84d65f55, type: 3}
+      - {fileID: -5110107240740190330, guid: 4c6fd9c9155e63646903f3fec428c78c, type: 3}
+      - {fileID: -5110107240740190330, guid: 1ad37bd0cd26c7740a55dcb189fdf4f3, type: 3}
+      - {fileID: -5110107240740190330, guid: d49deffaa3840484ba61bab9fdce270e, type: 3}
+      FightRooms:
+      - {fileID: 7658876454569440017, guid: 8ad8f205b29e11243a5d2b2d9a1944af, type: 3}
+      - {fileID: 7658876454569440017, guid: cd36b7fbe842b054ba377fbbd496c8ee, type: 3}
+      - {fileID: 7658876454569440017, guid: 63671652d29bcd24a839886ed4f2fbdf, type: 3}
+      - {fileID: 7658876454569440017, guid: b2969059b9a03ed449235895c9567499, type: 3}
+      - {fileID: 7658876454569440017, guid: 074f41caa4d222246bf5b460354cfb93, type: 3}
+      - {fileID: 7658876454569440017, guid: 6f8224a23dd3d4b4a8b648012afa945c, type: 3}
+      - {fileID: 7658876454569440017, guid: e37f72a2cd3c5464a88e38bfcf1c89ff, type: 3}
+      BossFightRooms:
+      - {fileID: 7658876454569440017, guid: 579cd4d9598ed154289228d955c2a9ab, type: 3}
+      EmptyShopRoom: {fileID: 8023271186346309081, guid: 80e89237a8b7d1746b7aff371d2d2a41,
+        type: 3}
+      EmptyTreasureRoom: {fileID: 8023271186346309081, guid: aa5dae7c305f1c442a1695f338f25f08,
+        type: 3}
+    EnemyData:
+      EnemyList_Lv1:
+      - {fileID: 5547289915406564110, guid: d3cebd7d36d3c514e93763677cf2a07c, type: 3}
+      - {fileID: 4979438894992673501, guid: f5b92a371ed16e1429404716f8ccaacd, type: 3}
+      EnemyList_Lv2:
+      - {fileID: 4979438894992673501, guid: dbf918934cffbcb49a4fd301b9088ec1, type: 3}
+      EnemyList_Lv3:
+      - {fileID: 4979438894992673501, guid: 68a3ce5d04b11dd49869b803b11e1681, type: 3}
+      EnemyList_Boss: []
+  ItemData:
+    ArtifactPool: {fileID: 11400000, guid: f3e49cb9db788c54ebb316c6061d3952, type: 2}
+    ArtifactShopPrice: 80
+    ArtifactShopPriceIncrease: 20
+    PropPool: {fileID: 11400000, guid: 074a2210d7f20bd489fe34aa241b4c7e, type: 2}
+    PropShopPrice: 30
+    PropShopPriceIncrease: 10
+    ShopRefreshPrice: 10
+    ShopRefreshPriceStep: 10
