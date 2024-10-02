@@ -62,18 +62,15 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
+        Debug.LogError("Awake-------");
 
 #if !UNITY_EDITOR
         EditorMode = false;
 #endif
         Inst = this;
-        if (IsNewArchive)
-        {
-            LocalizationManger.Inst.SetLanguage(SystemLanguage.Chinese);
-        }
         DontDestroyOnLoad(gameObject);
         Application.targetFrameRate = 60;
-        SetResolutionFromLevel(3);
+        // SetResolutionFromLevel(3);
         Screen.orientation = ScreenOrientation.Portrait;
         StartCoroutine(initAllManager());
     }
@@ -91,6 +88,7 @@ public class GameManager : MonoBehaviour
         DataManager.Inst.IsInit;
     private IEnumerator initAllManager()
     {
+        Debug.LogError("InitAllManager");
         ResourcesManager.Inst.EditorMode = EditorMode;
         ResourcesManager.Inst.Init();
         LocalizationManger.Inst.Init();
@@ -114,6 +112,10 @@ public class GameManager : MonoBehaviour
 
         procedureManager.StartProcedure(new MainSceneProcedure());
         // EventManager.Inst.DistributeEvent(EventName.OnAppStart);
+        if (IsNewArchive)
+        {
+            LocalizationManger.Inst.SetLanguage(SystemLanguage.English);
+        }
     }
 
 

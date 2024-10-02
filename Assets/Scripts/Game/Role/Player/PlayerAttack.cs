@@ -83,13 +83,24 @@ public class PlayerAttack : RoleAttack
         EventManager.Inst.RemoveEvent(EventName.OnRoleInjured, OnRoleInjured);
     }
 
+#if UNITY_ANDROID || UNITY_IOS
     protected virtual void OnInput(JoyStatusData statusData)
     {
         if (statusData.JoyStatus == UIJoyStatus.OnPressUp || statusData.JoyStatus == UIJoyStatus.Holding)
         {
             roleController.InputAttack();
         }
+        
     }
+#else
+    protected virtual void OnInput()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            roleController.InputAttack();
+        }
+    }
+#endif
 
     protected void SetAccumulateing(bool isAccumulateing)
     {

@@ -233,6 +233,12 @@ public class BattleGuide : MonoBehaviour
                 break;
             case BattleGuideType.ToturialPanel:
                 ToturialGuideType guideType = (ToturialGuideType)Enum.Parse(typeof(ToturialGuideType), sequenceData.Text);
+#if !UNITY_ANDROID || !UNITY_IOS
+                if (guideType != ToturialGuideType.Click && guideType != ToturialGuideType.Skill)
+                {
+                    break;
+                }
+#endif
                 UIManager.Inst.Open("ToturialPanel", false, guideType);
                 break;
             case BattleGuideType.ShowSkillBtn:

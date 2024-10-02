@@ -16,6 +16,7 @@ public class PlayerMove : RoleMove
 
     protected UIJoyStatus _joyStatus;
     protected Vector2 _dirValue;
+#if UNITY_ANDROID || UNITY_IOS
     protected virtual void OnInput(JoyStatusData statusData)
     {
         _joyStatus = statusData.JoyStatus;
@@ -43,6 +44,15 @@ public class PlayerMove : RoleMove
                 break;
         }
     }
+#else
+
+    protected virtual void OnInput()
+    {
+        Vector2 moveVec = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        moveVec = Quaternion.Euler(0, 0, 45) * moveVec;
+        roleController.InputMove(moveVec);
+    }
+#endif
 
     //暂时只有katana用，直接修改加速度
     public void SetMoveSpeedMax()

@@ -47,6 +47,7 @@ public class InputManager : MonoBehaviour
         {
             return;
         }
+#if UNITY_ANDROID || UNITY_IOS
 
         if (currentJoyStatusdata.JoyStatus == UIJoyStatus.OnPressUp)
         {
@@ -57,8 +58,21 @@ public class InputManager : MonoBehaviour
         {
             currentJoyStatusdata.JoyStatus = UIJoyStatus.Idle;
         }
-        BattleManager.Inst.CurrentPlayer.InputAction.OnInput(currentJoyStatusdata);
         
+        BattleManager.Inst.CurrentPlayer.InputAction.OnInput(currentJoyStatusdata);
+#else
+        if (!Input.anyKeyDown)
+        {
+            InteractManager.Inst.TryInteract();
+        }
+
+        if (Time.frameCount - currentJoyStatusdata.SendFrameCount > 1)
+        {
+            currentJoyStatusdata.JoyStatus = UIJoyStatus.Idle;
+        }
+
+        BattleManager.Inst.CurrentPlayer.InputAction.OnInput();
+#endif
         
         // switch (currentJoyStatusdata.JoyStatus)
         // {

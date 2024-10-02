@@ -38,6 +38,8 @@ public class PlayerShieldAttack : PlayerAttack
         IndicatorManager.Inst.Recover(sprintRect);
     }
 
+#if UNITY_ANDROID || UNITY_IOS
+
     protected override void OnInput(JoyStatusData joyStatusData)
     {
         if (roleController.IsDie)
@@ -78,6 +80,12 @@ public class PlayerShieldAttack : PlayerAttack
             sprintRect.gameObject.SetActive(false);
         }
     }
+#else
+    protected override void OnInput()
+    {
+        
+    }
+#endif
 
     //
     // private void OnJoyStatus(string arg1, object arg2)

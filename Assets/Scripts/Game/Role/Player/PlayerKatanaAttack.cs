@@ -11,6 +11,11 @@ public class PlayerKatanaAttack : PlayerAttack
     [SerializeField][LabelText("蓄力自动释放")]
     private bool _autoAccumulateAttack = false;
     
+    #if UNITY_STANDALONE_WIN || UNITY_STANDALONE
+    private float downTime;
+    private float LongPressTime = .2f;
+    private bool isClickHeld = false;
+    #endif
     protected override void Awake()
     {
         base.Awake();
@@ -98,6 +103,7 @@ public class PlayerKatanaAttack : PlayerAttack
         }
     }
     
+#if UNITY_ANDROID || UNITY_IOS
     protected override void OnInput(JoyStatusData statusData)
     {
         if (roleController.IsDie)
@@ -107,6 +113,11 @@ public class PlayerKatanaAttack : PlayerAttack
             return;
         }
 
+        if (Input.GetMouseButtonUp(0) && !IsAccumulateing)
+        {
+            roleController.InputAttack();
+            return;
+        }
         if (statusData.JoyStatus == UIJoyStatus.OnPressUp && !IsAccumulateing)
         {
             roleController.InputAttack();
@@ -162,6 +173,88 @@ public class PlayerKatanaAttack : PlayerAttack
 
         MoveAccumulateAttack(statusData);
     }
+#else
+    protected override void OnInput()
+    {
+        if (roleController.IsDie)
+        {
+            SetAccumulateing(false);
+            roleController.Animator.SetBool(Accumulate,false);
+            return;
+        }
+        if (Input.GetMouseButtonUp(0) && !IsAccumulateing)
+        {
+            roleController.InputAttack();
+            isClickHeld = false;
+            return;
+        }
+        if (Input.GetMouseButton(0) && IsAccumulateing)
+        {
+            return;
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            if (roleController.EnemyTarget != null)
+            {
+                roleController.Animator.transform.forward =
+                    (roleController.EnemyTarget.transform.position - roleController.transform.position).normalized;
+            }
+            if (isClickHeld)
+            {
+                Debug.Log("2");
+                if (Time.time - downTime >= LongPressTime)
+                {
+                    Debug.Log("3");
+                    SetAccumulateing(true);
+                }
+            }
+            if (!IsAccumulateing && !isClickHeld)
+            {
+                isClickHeld = true;
+                downTime = Time.time;
+                Debug.Log("1");
+            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            if (Time.time - AccumulateingStartTime > HoldTime)
+            {
+                AccumlateAttack();
+            }
+            SetAccumulateing(false);
+            isDisEvent = false;
+            isClickHeld = false;
+            isDisMoveEvent = false;
+        }
+        else if (Input.anyKeyDown)
+        {
+            // if (IsAccumulateComplete)
+            // {
+            //     ((PlayerMove)roleController.roleMove).SetMoveSpeedMax();
+            // }
+            // isClickHeld = false;
+            // SetAccumulateing(false);
+        }        
+        // else if (statusData.JoyStatus == UIJoyStatus.OnHoldDragEnd
+        //          || statusData.JoyStatus == UIJoyStatus.HoldDraging
+        //          || statusData.JoyStatus == UIJoyStatus.Idle)
+        // {
+        //     SetAccumulateing(false);
+        // }
+
+        // if (!Input.anyKeyDown)
+        // {
+        //     isDisEvent = false;
+        //     isDisMoveEvent = false;
+        //     SetAccumulateing(false);
+        //     isClickHeld = false;
+        // }
+        
+        roleController.Animator.SetBool(Accumulate,IsAccumulateing);
+
+        // MoveAccumulateAttack(statusData);
+    }
+#endif
 
     public void AccumlateAttack()
     {

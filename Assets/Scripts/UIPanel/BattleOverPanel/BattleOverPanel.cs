@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class BattleOverPanel : PanelBase
 {
+    private static int backPressed = 0;
     [SerializeField] [BoxGroup("Audio")] private AudioClip numberAudio;
     [SerializeField] [BoxGroup("Audio")] private AudioClip numberOverAudio;
     [SerializeField] [BoxGroup("Audio")] private AudioClip winAudio;
@@ -199,6 +200,8 @@ public class BattleOverPanel : PanelBase
 
 
 public void OnBackBtnClick()
+{
+    if (backPressed < 1)
     {
         UIManager.Inst.ShowMask(() =>
         {
@@ -209,6 +212,12 @@ public void OnBackBtnClick()
             UIManager.Inst.HideMask(null);
         });
     }
+    else
+    {
+        Application.Quit();
+    }
+    backPressed++;
+}
 
     //Animator-----------
 

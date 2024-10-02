@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerRoll : RoleRoll
 {
@@ -38,8 +39,11 @@ public class PlayerRoll : RoleRoll
     {
         currentRollType = rollType;
     }
+    
+#if UNITY_ANDROID || UNITY_IOS
     protected virtual void OnInput(JoyStatusData statusData)
     {
+
         if (statusData.JoyStatus == UIJoyStatus.OnSlide || statusData.JoyStatus == UIJoyStatus.OnHoldSlide)
         {
             if (statusData.SlideDir == Vector2.zero)
@@ -49,8 +53,20 @@ public class PlayerRoll : RoleRoll
 
             roleController.InputRoll(InputManager.Inst.GetCameraDir(statusData.SlideDir));
         }
+        if (Input.GetMouseButtonUp(1))
+        {
+            roleController.InputRoll(roleController.transform.forward);
+        }
     }
-
+#else
+    protected virtual void OnInput()
+    {
+        if (Input.GetMouseButtonUp(1))
+        {
+            roleController.InputRoll(roleController.transform.forward);
+        }
+    }
+#endif
 
     public override void InputRoll(Vector2 v2)
     {

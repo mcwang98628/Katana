@@ -61,6 +61,7 @@ public class PlayerShieldDash : PlayerRoll
     }
     
     
+#if UNITY_ANDROID || UNITY_IOS
     protected override void OnInput(JoyStatusData statusData)
     {
         if (statusData.JoyStatus == UIJoyStatus.OnSlide ||
@@ -81,6 +82,12 @@ public class PlayerShieldDash : PlayerRoll
             Dash(new Vector2(forward.x,forward.z));
         }
     }
+#else
+    protected override void OnInput()
+    {
+       
+    }
+#endif
     
     
     public override void OnStartRoll()

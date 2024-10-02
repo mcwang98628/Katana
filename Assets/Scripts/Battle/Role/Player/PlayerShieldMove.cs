@@ -22,6 +22,7 @@ public class PlayerShieldMove : PlayerMove
     //    ? HoldingTurningAngSpeed
     //    : base.TurningAngSpeed;
 
+#if UNITY_ANDROID || UNITY_IOS
     protected override void OnInput(JoyStatusData statusData)
     {
         _joyStatus = statusData.JoyStatus;
@@ -49,6 +50,12 @@ public class PlayerShieldMove : PlayerMove
                 break;
         }
     }
+#else
+    protected override void OnInput()
+    {
+        
+    }
+#endif
 
     public void SetShieldMoveSpeed(float speed)
     {

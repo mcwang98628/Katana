@@ -33,7 +33,7 @@ public class PlayerController : RoleController
 
     public float AddGoldMagnification => 1f + GetAttributeBonusValue(AttributeType.AddGoldMagnification);
 
-    public override bool IsCanMove => !IsDie && !IsDizziness && !IsRolling && !isHiting && (CantMoveSkillUsingCount == 0) && !isOnlyRoll;
+    public override bool IsCanMove => !IsDie && !IsDizziness && !IsRolling && !isHiting && (CantMoveSkillUsingCount == 0) && !isOnlyRoll && !IsAttacking;
     public override bool IsCanRoll => base.IsCanRoll && CanMoveSkillUsingCount == 0 && CantMoveSkillUsingCount == 0 && ((PlayerRoll) roleRoll).CoolPercent >= 1;
     public override bool IsCanAttack => base.IsCanAttack && CanMoveSkillUsingCount == 0 && CantMoveSkillUsingCount == 0;
 

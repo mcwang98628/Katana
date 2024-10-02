@@ -39,13 +39,17 @@ public class UI_BattlePanel : PanelBase
         EventManager.Inst.AddEvent(EventName.OnRoleInjured, OnPlayerHitEnemy);
         EventManager.Inst.AddEvent(EventName.GuideDialog,OnDialog);
         EventManager.Inst.AddEvent(EventName.OnMoveCamera,OnMoveCamera);
+#if UNITY_ANDROID || UNITY_IOS
         EventManager.Inst.AddEvent(EventName.HideJoy,OnHideJoy);
+#endif
         EventManager.Inst.AddEvent(EventName.EnterFightRoom,OnEnterFightRoom);
         EventManager.Inst.AddEvent(EventName.ClearAllEnemy,OnClearAllEnemy);
     }
     private void OnDestroy()
     {
+#if UNITY_ANDROID || UNITY_IOS
         EventManager.Inst.RemoveEvent(EventName.HideJoy,OnHideJoy);
+#endif
         EventManager.Inst.RemoveEvent(EventName.GuideDialog,OnDialog);
         EventManager.Inst.RemoveEvent(EventName.OnMoveCamera,OnMoveCamera);
         EventManager.Inst.RemoveEvent(EventName.OnRoleInjured, OnPlayerHitEnemy);

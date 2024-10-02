@@ -71,11 +71,19 @@ public class ArchiveData_1_5_0 : IArchiveData
             archiveData150.GlobalData.MaxFire = 6;
             archiveData150.GlobalData.FireRecoveryTime = -1;
             // archiveData140.GlobalData.OneFireRecoveryNeedTime = 7200;
+#if UNITY_ANDROID|| UNITY_IOS
             archiveData150.GlobalData.UnLockHeros.Add(1101);
             // ReSharper disable once PossibleInvalidOperationException
             archiveData150.GlobalData.HeroUpgradeDatas.Add(1101,new HeroUpgradeInfo());
             archiveData150.GlobalData.HeroUpgradeDatas[1101].SetHeroUpgradeData(DataManager.Inst.GetHeroUpgradeData(1101,1,0).Value);
             archiveData150.GlobalData.LastSelectHeroID = 1101;
+#else
+            archiveData150.GlobalData.UnLockHeros.Add(1203);
+            // ReSharper disable once PossibleInvalidOperationException
+            archiveData150.GlobalData.HeroUpgradeDatas.Add(1203,new HeroUpgradeInfo());
+            archiveData150.GlobalData.HeroUpgradeDatas[1203].SetHeroUpgradeData(DataManager.Inst.GetHeroUpgradeData(1203,1,0).Value);
+            archiveData150.GlobalData.LastSelectHeroID = 1203;
+#endif
             archiveData150.GlobalData.LastSelectChapterId = 1;
             archiveData150.GlobalData.ThroughTutorial = false;
             // archiveData140.GlobalData.UnLockItems = ints;

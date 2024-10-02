@@ -159,8 +159,10 @@ public class UI_Joy : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragH
 
         isNotLeaveDeadZone = true;
         pointerId = eventData.pointerId;
+#if UNITY_ANDROID || UNITY_IOS
         root.gameObject.SetActive(true);
         joyPoint.gameObject.SetActive(true);
+#endif
         root.position = eventData.position;
         joyPoint.position = eventData.position;
         
