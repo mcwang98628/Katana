@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using AnimatorTools;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -17,10 +18,11 @@ public class PlayerRoll : RoleRoll
     public float CoolPercent=1;
     public int CurrentRollType => currentRollType;
 
-
     private static readonly int RollType = Animator.StringToHash("RollType");
 
     
+    private static readonly int RollEndString = Animator.StringToHash("RollEnd");
+
     protected override void Awake()
     {
         base.Awake();
@@ -76,9 +78,13 @@ public class PlayerRoll : RoleRoll
         {
             roleController.Animator2.SetInteger(RollType, currentRollType);
         }
-        
+        roleController.SetDodge(true);
+
         base.InputRoll(v2);
-        // roleController.SetIsRoll(true);
+        rollSphere.SetActive(true);
+        GameModel.SetActive(false);
+        StartCoroutine(StopRollAfter(.31f));
+        roleController.SetIsRoll(true);
         roleController.SetIsAttacking(false);
         roleController.gameObject.layer = LayerMask.NameToLayer("PlayerRoll");
         timer=0;
@@ -88,6 +94,8 @@ public class PlayerRoll : RoleRoll
         OnEndRoll();
         base.RollBack();
         roleController.SetIsRoll(false);
+        rollSphere.SetActive(false);
+        GameModel.SetActive(true);
         // roleController.SetIsAttacking(false);
         roleController.gameObject.layer = LayerMask.NameToLayer("Player");
     }
@@ -123,5 +131,13 @@ public class PlayerRoll : RoleRoll
     {
         yield return new WaitForSeconds(delayTime);
          roleController.StopFastMove();
+    }
+    
+    IEnumerator StopRollAfter(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        RollBack();
+        roleController.SetDodge(false);
+
     }
 }

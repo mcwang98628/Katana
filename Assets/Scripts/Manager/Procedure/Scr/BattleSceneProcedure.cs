@@ -22,7 +22,7 @@ public class BattleSceneProcedure : IProcedure
 
     public void Update()
     {
-        
+    
     }
 }
 

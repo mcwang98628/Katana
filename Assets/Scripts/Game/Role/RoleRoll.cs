@@ -13,6 +13,10 @@ public class RoleRoll : MonoBehaviour
     bool IsRollLastFrame;
     public FeedBackObject RollFeedbacks;
 
+    public GameObject rollSphere;
+    public GameObject GameModel;
+
+
     // public float RollSpeed;
     // public float RollTime;
     // [SerializeField]
@@ -66,13 +70,14 @@ public class RoleRoll : MonoBehaviour
         
         //在这里设置无敌，因为这样不容易出问题
         OnStartRoll();
-        roleController.Animator.SetTrigger(Roll);
+
+        // roleController.Animator.SetTrigger(Roll);
         if (roleController.Animator2 != null)
         {
             roleController.Animator2.SetTrigger(Roll);
         }
         
-        // roleController.FastMove(RollTime,RollSpeed,new Vector3(v2.x,0,v2.y), RollBack,rollCurve);
+        roleController.FastMove(.31f, 10, new Vector3(v2.x,0,v2.y), () => {});
         PlayEffect(new Vector3(v2.x, 0, v2.y));
         EventManager.Inst.DistributeEvent(EventName.OnRoleRoll);
     }
