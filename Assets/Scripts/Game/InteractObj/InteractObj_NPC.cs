@@ -34,7 +34,7 @@ public class InteractObj_NPC : InteractObj
             return;
         }
 
-        if (!canInteract)
+        if (!canInteract || talked)
         {
             return;
         }

@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 5172919716679938192}
   - component: {fileID: 7930264783469601651}
   m_Layer: 0
-  m_Name: Npc_ShopDealer
+  m_Name: Role_NPC_ShopDealer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,9 +464,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogData: {fileID: 11400000, guid: f88ce3119ea8fe640891ff28eec28087, type: 2}
-  CanRepeat: 1
+  CanRepeat: 0
   FinishAudio: {fileID: 0}
   FinishParticle: {fileID: 0}
+  IsRefresh: 0
 --- !u!1 &7164635836954075329
 GameObject:
   m_ObjectHideFlags: 0

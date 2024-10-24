@@ -81,9 +81,9 @@ public class PlayerRoll : RoleRoll
         roleController.SetDodge(true);
 
         base.InputRoll(v2);
-        rollSphere.SetActive(true);
-        GameModel.SetActive(false);
-        StartCoroutine(StopRollAfter(.31f));
+        // rollSphere.SetActive(true);
+        // GameModel.SetActive(false);
+        // StartCoroutine(StopRollAfter(.31f));
         roleController.SetIsRoll(true);
         roleController.SetIsAttacking(false);
         roleController.gameObject.layer = LayerMask.NameToLayer("PlayerRoll");
@@ -94,8 +94,8 @@ public class PlayerRoll : RoleRoll
         OnEndRoll();
         base.RollBack();
         roleController.SetIsRoll(false);
-        rollSphere.SetActive(false);
-        GameModel.SetActive(true);
+        // rollSphere.SetActive(false);
+        // GameModel.SetActive(true);
         // roleController.SetIsAttacking(false);
         roleController.gameObject.layer = LayerMask.NameToLayer("Player");
     }
