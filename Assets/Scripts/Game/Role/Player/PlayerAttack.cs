@@ -116,11 +116,11 @@ public class PlayerAttack : RoleAttack
         }
         this._isAccumulateing = isAccumulateing;
         roleController.Animator.SetBool(Accumulate, isAccumulateing);
-        // if (!roleController.IsRolling)
-        // {
-        //     roleController.roleRoll.rollSphere.SetActive(isAccumulateing);
-        //     roleController.roleRoll.GameModel.SetActive(!isAccumulateing);
-        // }
+        if (!roleController.IsRolling)
+        {
+            roleController.roleRoll.rollSphere.SetActive(isAccumulateing);
+            roleController.roleRoll.GameModel.SetActive(!isAccumulateing);
+        }
     }
     
     // public void SetAttackType(int type)
