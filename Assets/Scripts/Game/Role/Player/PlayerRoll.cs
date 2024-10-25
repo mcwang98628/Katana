@@ -78,7 +78,7 @@ public class PlayerRoll : RoleRoll
         {
             roleController.Animator2.SetInteger(RollType, currentRollType);
         }
-        roleController.SetDodge(true);
+        // roleController.SetDodge(true);
 
         base.InputRoll(v2);
         // rollSphere.SetActive(true);
