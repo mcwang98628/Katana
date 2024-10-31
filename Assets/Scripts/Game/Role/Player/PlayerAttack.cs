@@ -51,6 +51,8 @@ public class PlayerAttack : RoleAttack
     public List<GameObject> ComboParticles;
     public FeedBackObject AttackFeedback;
 
+    public GameObject AttackDirectionArrow;
+    
     private bool AttackIsCrit;
     // private bool isCanDistributeCirtEvent;
 
@@ -113,6 +115,7 @@ public class PlayerAttack : RoleAttack
         {
             AccumulateingStartTime = Time.time;
             roleController.Animator.ResetTrigger(AccumulateAttack);
+            AttackDirectionArrow.SetActive(true);
         }
         this._isAccumulateing = isAccumulateing;
         roleController.Animator.SetBool(Accumulate, isAccumulateing);
@@ -121,6 +124,23 @@ public class PlayerAttack : RoleAttack
             roleController.roleRoll.rollSphere.SetActive(isAccumulateing);
             roleController.roleRoll.GameModel.SetActive(!isAccumulateing);
         }
+
+        if (roleController.EnemyTarget != null)
+        {
+            var dir = roleController.EnemyTarget.transform.position - roleController.transform.position;
+            dir.y = 0;
+            AttackDirectionArrow.transform.forward = dir.normalized;
+        }
+        else
+        {
+            AttackDirectionArrow.transform.forward = roleController.Animator.transform.forward;
+        }
+
+        if (!isAccumulateing)
+        {
+            AttackDirectionArrow.SetActive(false);
+        }
+        
     }
     
     // public void SetAttackType(int type)
@@ -308,12 +328,14 @@ public class PlayerAttack : RoleAttack
                     var dir = roleController.EnemyTarget.transform.position - roleController.transform.position;
                     dir.y = 0;
                     roleController.Animator.transform.forward = dir.normalized;
+                    AttackDirectionArrow.transform.forward = dir.normalized;
                 }
                 else if (roleController.FindEnemyTarget.BreakableTarget != null)
                 {
                     var dir = roleController.FindEnemyTarget.BreakableTarget.transform.position - roleController.transform.position;
                     dir.y = 0;
                     roleController.Animator.transform.forward = dir.normalized;
+                    AttackDirectionArrow.transform.forward = dir.normalized;
                 }
             }
         }

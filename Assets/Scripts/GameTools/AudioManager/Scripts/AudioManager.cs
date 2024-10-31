@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
             volume = 0;
         }
 
-        volume = 0.2f;
+        // volume = 0.2f;
         if (bgmTweener != null)
         {
             bgmTweener.Kill(false);

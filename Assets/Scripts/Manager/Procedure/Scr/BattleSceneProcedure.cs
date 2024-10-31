@@ -8,9 +8,9 @@ public class BattleSceneProcedure : IProcedure
     public void Start()
     {
         
-        ResourcesManager.Inst.GetAsset<AudioClip>("Assets/AssetsPackage/Music/FightBGM.mp3", delegate(AudioClip clip)
+        ResourcesManager.Inst.GetAsset<AudioClip>("Assets/AssetsPackage/Music/BattleTemp.mp3", delegate(AudioClip clip)
         {
-            AudioManager.Inst.PlayBGM(clip,0.7f);
+            AudioManager.Inst.PlayBGM(clip,2.0f);
         });
         
     }

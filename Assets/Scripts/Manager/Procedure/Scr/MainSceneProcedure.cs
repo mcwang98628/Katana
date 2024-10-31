@@ -7,7 +7,7 @@ public class MainSceneProcedure : IProcedure
 
     public void Start()
     {
-        ResourcesManager.Inst.GetAsset<AudioClip>("Assets/AssetsPackage/Music/CalmBGM.mp3", delegate(AudioClip clip)
+        ResourcesManager.Inst.GetAsset<AudioClip>("Assets/AssetsPackage/Music/Main_title_temp.mp3", delegate(AudioClip clip)
         {
             AudioManager.Inst.PlayBGM(clip,0.7f);
         });

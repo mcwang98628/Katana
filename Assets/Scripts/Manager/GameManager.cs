@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
-        Debug.LogError("Awake-------");
+        Debug.Log("Awake-------");
 
 #if !UNITY_EDITOR
         EditorMode = false;
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
         DataManager.Inst.IsInit;
     private IEnumerator initAllManager()
     {
-        Debug.LogError("InitAllManager");
+        Debug.Log("InitAllManager");
         ResourcesManager.Inst.EditorMode = EditorMode;
         ResourcesManager.Inst.Init();
         LocalizationManger.Inst.Init();
