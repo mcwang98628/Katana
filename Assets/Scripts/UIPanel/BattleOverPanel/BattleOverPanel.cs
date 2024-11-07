@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class BattleOverPanel : PanelBase
 {
-    private static int backPressed = 0;
+    // private static int backPressed = 0;
     [SerializeField] [BoxGroup("Audio")] private AudioClip numberAudio;
     [SerializeField] [BoxGroup("Audio")] private AudioClip numberOverAudio;
     [SerializeField] [BoxGroup("Audio")] private AudioClip winAudio;
@@ -56,6 +56,7 @@ public class BattleOverPanel : PanelBase
     [SerializeField] [BoxGroup("Score")] private Text ScoreText;
 
     [SerializeField] private CanvasGroup BackBtn;
+    // [SerializeField] private CanvasGroup EndBtn;
 
 
     [SerializeField] [BoxGroup("DoPanel")] private Transform Title;
@@ -108,6 +109,16 @@ public class BattleOverPanel : PanelBase
         ChapterText.text = $"{LocalizationManger.Inst.GetText("Clearance")} {(data.isVictory ? 1 : 0)}";
 
         UpdateText.text = $"{LocalizationManger.Inst.GetText("NewRecord")}";
+
+        // UIText backText = BackBtn.GetComponentInChildren<UIText>();
+        // if (backPressed < 1)
+        // {
+        //     backText.text = $"{LocalizationManger.Inst.GetText("StartOver")} {0}%";
+        // }
+        // else
+        // {
+        //     backText.text = $"{LocalizationManger.Inst.GetText("Quit")} {0}%";
+        // }
 
         // EnemySoulText.text = "+" + data.KillEnemySoul.ToString();
         // EnemyDiamondText.text = "+" + data.KillEnemyDiamond.ToString();
@@ -201,22 +212,28 @@ public class BattleOverPanel : PanelBase
 
 public void OnBackBtnClick()
 {
-    if (backPressed < 1)
+    UIManager.Inst.ShowMask(() =>
     {
-        UIManager.Inst.ShowMask(() =>
-        {
-            // UIManager.Inst.HideMask(null);
-            TimeManager.Inst.SetTimeScale(1f);
-            UIManager.Inst.Close("BattleOverPanel");
-            ProcedureManager.Inst.StartProcedure(new MainSceneProcedure());
-            UIManager.Inst.HideMask(null);
-        });
-    }
-    else
-    {
-        Application.Quit();
-    }
-    backPressed++;
+        // UIManager.Inst.HideMask(null);
+        TimeManager.Inst.SetTimeScale(1f);
+        UIManager.Inst.Close("BattleOverPanel");
+        ProcedureManager.Inst.StartProcedure(new MainSceneProcedure());
+        UIManager.Inst.HideMask(null);
+    });
+    // if (backPressed < 1)
+    // {
+    //    
+    // }
+    // else
+    // {
+    //     Application.Quit();
+    // }
+    // backPressed++;
+}
+
+public void OnEndBtnClick()
+{
+    Application.Quit();
 }
 
     //Animator-----------

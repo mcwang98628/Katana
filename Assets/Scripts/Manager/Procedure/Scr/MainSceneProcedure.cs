@@ -21,9 +21,11 @@ public class MainSceneProcedure : IProcedure
             }
             else
             {
-                UIManager.Inst.ShowMask(() =>
+                UIManager.Inst.HideMask(() =>
                 {
-                    GameManager.Inst.StartCoroutine(StartTutorialsBattle());
+                    GameManager.Inst.StartCoroutine(StartMainPanel());
+
+                    // GameManager.Inst.StartCoroutine(StartTutorialsBattle());
                 });
             }
             UIManager.Inst.HideMask(null);

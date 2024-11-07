@@ -76,20 +76,22 @@ public abstract class SimilarChapterRules:BaseRules
         
         ArchiveManager.Inst.CopyUnLcokItems();
         ArchiveManager.Inst.StartBattle();
-
+        
         StartRoom(delegate { InitPlayer(); });
         
-
+        
         UIManager.Inst.HideMask(null);
-
+        
         while (CurrentPlayer == null)
         {
             yield return null;
         }
         callBack?.Invoke();
-
+        
         yield return null;
         EventManager.Inst.DistributeEvent(EventName.OnChapterRulesLoadBattleOver);
+
+
     }
 
     protected IEnumerator WaitDoCamera()

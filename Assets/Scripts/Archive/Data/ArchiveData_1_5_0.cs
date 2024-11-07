@@ -84,7 +84,7 @@ public class ArchiveData_1_5_0 : IArchiveData
             archiveData150.GlobalData.HeroUpgradeDatas[1203].SetHeroUpgradeData(DataManager.Inst.GetHeroUpgradeData(1203,1,0).Value);
             archiveData150.GlobalData.LastSelectHeroID = 1203;
 #endif
-            archiveData150.GlobalData.LastSelectChapterId = 1;
+            archiveData150.GlobalData.LastSelectChapterId = 0;
             archiveData150.GlobalData.ThroughTutorial = false;
             // archiveData140.GlobalData.UnLockItems = ints;
             //战斗数据

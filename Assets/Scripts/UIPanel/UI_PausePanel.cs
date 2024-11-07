@@ -19,10 +19,10 @@ public class UI_PausePanel : PanelBase
     
     private void Awake()
     {
-        if (BattleManager.Inst.IsTutorial)
-        {
-            HomeButton.gameObject.SetActive(false);
-        }
+        // if (BattleManager.Inst.IsTutorial)
+        // {
+        //     HomeButton.gameObject.SetActive(false);
+        // }
 
         InitItem();
         // InitFire();
@@ -79,24 +79,25 @@ public class UI_PausePanel : PanelBase
 
     public void OnBackHome()
     {  
-        UIManager.Inst.Open("YesOrNoPanel",true,"BackHomeTitle","BackHomeContent",new Action<bool>(isOk =>
-        {
-            if (isOk)
-            {
-                // ArchiveManager.Inst.SaveBattleData(null);
-                // UIManager.Inst.ShowMask(()=> {
-                //     TimeManager.Inst.SetTimeScale(1f);
-                //     UIManager.Inst.Close();
-                //     ProcedureManager.Inst.StartProcedure(new MainSceneProcedure());
-                //     UIManager.Inst.HideMask(null);
-                // });
-
-                // TimeManager.Inst.SetTimeScale(1f);
-                UIManager.Inst.Close("PausePanel");
-                GameManager.Inst.StartCoroutine(WaitQuitGame());
-
-            }
-        }));
+        // UIManager.Inst.Open("YesOrNoPanel",true,"BackHomeTitle","BackHomeContent",new Action<bool>(isOk =>
+        // {
+        //     if (isOk)
+        //     {
+        //         // ArchiveManager.Inst.SaveBattleData(null);
+        //         // UIManager.Inst.ShowMask(()=> {
+        //         //     TimeManager.Inst.SetTimeScale(1f);
+        //         //     UIManager.Inst.Close();
+        //         //     ProcedureManager.Inst.StartProcedure(new MainSceneProcedure());
+        //         //     UIManager.Inst.HideMask(null);
+        //         // });
+        //
+        //         // TimeManager.Inst.SetTimeScale(1f);
+        //         UIManager.Inst.Close("PausePanel");
+        //         GameManager.Inst.StartCoroutine(WaitQuitGame());
+        //
+        //     }
+        // }));
+        Application.Quit();
     }
 
     IEnumerator WaitQuitGame()
