@@ -48,6 +48,10 @@ public class FocusGuide : MonoBehaviour
         {
             case FocusGuideData.TriggerType.Toggle:
                 _toggle = go.GetComponent<Toggle>();
+                if (!_toggle)
+                {
+                    _toggle = go.GetComponentInParent<Toggle>();
+                }
                 _toggle.onValueChanged.AddListener(OnToggle);
                 break;
             case FocusGuideData.TriggerType.Button:
@@ -147,7 +151,9 @@ public class FocusGuide : MonoBehaviour
     {
         List<FocusGuideData> focusGuideDatas = new List<FocusGuideData>();
         
-        focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Toggle,"Equipment"));
+        // focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Toggle,"Equipment"));
+        focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Toggle,"Equipment/Icon"));
+
         focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Button,"Equip0"));
         focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Button,"EquipBtn"));
         focusGuideDatas.Add(new FocusGuideData(FocusGuideData.TriggerType.Button,"Equip0"));

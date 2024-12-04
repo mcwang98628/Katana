@@ -115,7 +115,7 @@ public class UI_MainPanel_EquipmentPanel_EquipInfo : MonoBehaviour
             }
         }
         
-        deleteBtn.SetActive(IsInPackage);
+        // deleteBtn.SetActive(IsInPackage);
         equipmentBtn.SetActive(IsInPackage);
         unEquipmentBtn.SetActive(!IsInPackage);
     }

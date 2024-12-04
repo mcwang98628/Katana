@@ -24,7 +24,7 @@ public class ProcedureManager : MonoBehaviour
         {
             if (procedure.GetType() == CurrentProcedure.GetType())
             {
-                // Debug.LogError("Error：相同流程转跳--》" + procedure.GetType());
+                Debug.LogError("Error：相同流程转跳--》" + procedure.GetType());
                 return;
             }
 

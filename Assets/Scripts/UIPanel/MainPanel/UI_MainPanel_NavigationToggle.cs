@@ -90,9 +90,9 @@ public class UI_MainPanel_NavigationToggle : MonoBehaviour
         bool isUnlock = IsUnLock(currentToggleType);
         _toggle.interactable = isUnlock;
         icon.gameObject.SetActive(isUnlock);
+        var unlockAnimations = ArchiveManager.Inst.ArchiveData.GlobalData.PlayedUnlockSystemAnimaton;
         if (isUnlock)
         {
-            var unlockAnimations = ArchiveManager.Inst.ArchiveData.GlobalData.PlayedUnlockSystemAnimaton;
             bool isPlayAnimation = false;
             switch (currentToggleType)
             {
@@ -104,13 +104,13 @@ public class UI_MainPanel_NavigationToggle : MonoBehaviour
                         FocusGuide.Inst.StartGuide(FocusGuide.GuideType.Equipment);
                     }
                     break;
-                case ToggleType.Hero:
-                    if (!unlockAnimations.Contains(UnlockSystemType.Hero))
-                    {
-                        isPlayAnimation = true;
-                        unlockAnimations.Add(UnlockSystemType.Hero);
-                        FocusGuide.Inst.StartGuide(FocusGuide.GuideType.Hero);
-                    }
+                // case ToggleType.Hero:
+                //     if (!unlockAnimations.Contains(UnlockSystemType.Hero))
+                //     {
+                //         isPlayAnimation = true;
+                //         unlockAnimations.Add(UnlockSystemType.Hero);
+                //         FocusGuide.Inst.StartGuide(FocusGuide.GuideType.Hero);
+                //     }
                     break;
             }
             ArchiveManager.Inst.SaveArchive();

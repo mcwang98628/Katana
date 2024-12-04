@@ -203,10 +203,10 @@ public class BattleOverPanel : PanelBase
             itemGo.Init(equipList[i]);
             itemPrefabs.Add(itemGo);
         }
-        var diamGo = GameObject.Instantiate(ItemPrefab, ItemPrefabGroup);
-        int diamondValue = ArchiveManager.Inst.ArchiveData.TemporaryData.AddDiamondValue;
-        diamGo.Init(diamondValue);
-        itemPrefabs.Add(diamGo);
+        // var diamGo = GameObject.Instantiate(ItemPrefab, ItemPrefabGroup);
+        // int diamondValue = ArchiveManager.Inst.ArchiveData.TemporaryData.AddDiamondValue;
+        // diamGo.Init(diamondValue);
+        // itemPrefabs.Add(diamGo);
     }
 
 

@@ -125,7 +125,7 @@ public class UIManager : MonoBehaviour
             callBack?.Invoke();
             return;
         }
-        LogoMaskImg.gameObject.SetActive(true);
+        // LogoMaskImg.gameObject.SetActive(true);
         if (logoMaskTweener!=null)
         {
             logoMaskTweener.Kill(true);

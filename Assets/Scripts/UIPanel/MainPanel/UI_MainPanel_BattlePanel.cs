@@ -18,6 +18,14 @@ public class UI_MainPanel_BattlePanel : MonoBehaviour
     private Text progressText;
     [SerializeField]
     private UI_MainPanel_Tips _tips;
+    [SerializeField]
+    private GameObject creditPanel;
+    [SerializeField]
+    private GameObject startBtn;
+    [SerializeField]
+    private GameObject creditBtn;
+    [SerializeField]
+    private GameObject quitBtn;
     // [SerializeField]
     // private GameObject redPoint;
     
@@ -72,6 +80,31 @@ public class UI_MainPanel_BattlePanel : MonoBehaviour
         BattleManager.Inst.StartGame();
     }
     
+    
+    public void OnCreditBtnClick()
+    {
+        chapterText.gameObject.SetActive(false);
+        chapterName.gameObject.SetActive(false);
+        creditPanel.SetActive(true);
+        startBtn.SetActive(false);
+        creditBtn.SetActive(false);
+        quitBtn.SetActive(false);
+    }
+    
+    public void OnQuitBtnClick()
+    {
+        Application.Quit();
+    }
+
+    public void OnBackBtnClick()
+    {
+        chapterText.gameObject.SetActive(true);
+        chapterName.gameObject.SetActive(true);
+        creditPanel.SetActive(false);;
+        startBtn.SetActive(true);
+        creditBtn.SetActive(true);
+        quitBtn.SetActive(true);
+    }
     public void OnMissionBtnClick()
     {
         missionPanel.Init();

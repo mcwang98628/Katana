@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4114632690
+CRC: 1582821714
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -259,6 +259,10 @@ AssetBundleManifest:
         Dependency_0: font
         Dependency_1: battleoverpanel
     Info_28:
+      Name: logopanel
+      Dependencies:
+        Dependency_0: battleoverpanel
+    Info_29:
       Name: mainpanel
       Dependencies:
         Dependency_0: font
@@ -268,23 +272,24 @@ AssetBundleManifest:
         Dependency_4: firepanel
         Dependency_5: infopanel
         Dependency_6: leveluppanel
-    Info_29:
+        Dependency_7: logopanel
+    Info_30:
       Name: nextlevelpanel
       Dependencies:
         Dependency_0: battleoverpanel
         Dependency_1: mainpanel
-    Info_30:
+    Info_31:
       Name: nextlevelpanel_adventure
       Dependencies:
         Dependency_0: battleoverpanel
         Dependency_1: mainpanel
         Dependency_2: nextlevelpanel
-    Info_31:
+    Info_32:
       Name: npctalkpanel
       Dependencies:
         Dependency_0: font
         Dependency_1: chooseitempanel
-    Info_32:
+    Info_33:
       Name: pausepanel
       Dependencies:
         Dependency_0: font
@@ -292,45 +297,45 @@ AssetBundleManifest:
         Dependency_2: battlepanel
         Dependency_3: chooseitempanel
         Dependency_4: mainpanel
-    Info_33:
+    Info_34:
       Name: promotepanel
       Dependencies:
         Dependency_0: font
         Dependency_1: battleoverpanel
         Dependency_2: leveluppanel
-    Info_34:
+    Info_35:
       Name: replaceitempanel
       Dependencies:
         Dependency_0: font
         Dependency_1: battleoverpanel
-    Info_35:
+    Info_36:
       Name: resurrectionpanel
       Dependencies:
         Dependency_0: battleoverpanel
-    Info_36:
+    Info_37:
       Name: shoppanel
       Dependencies:
         Dependency_0: font
         Dependency_1: battleoverpanel
         Dependency_2: chooseitempanel
         Dependency_3: mainpanel
-    Info_37:
+    Info_38:
       Name: toturialpanel
       Dependencies:
         Dependency_0: battlepanel
-    Info_38:
+    Info_39:
       Name: unlockheropanel
       Dependencies:
         Dependency_0: font
         Dependency_1: battleoverpanel
         Dependency_2: leveluppanel
         Dependency_3: mainpanel
-    Info_39:
+    Info_40:
       Name: unlockitempanel
       Dependencies:
         Dependency_0: font
         Dependency_1: chooseitempanel
-    Info_40:
+    Info_41:
       Name: yesornopanel
       Dependencies:
         Dependency_0: font
@@ -339,24 +344,24 @@ AssetBundleManifest:
         Dependency_3: mainpanel
         Dependency_4: npctalkpanel
         Dependency_5: replaceitempanel
-    Info_41:
+    Info_42:
       Name: enemy_boss_goblingiant
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: prefabs
-    Info_42:
+    Info_43:
       Name: enemy_boss_skeletonghost
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: prefabs
         Dependency_2: enemy_boss_goblingiant
-    Info_43:
+    Info_44:
       Name: enemy_boss_skeletonking
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
         Dependency_2: enemy_boss_skeletonghost
-    Info_44:
+    Info_45:
       Name: enemy_boss_skeletonknight
       Dependencies:
         Dependency_0: buff
@@ -365,7 +370,7 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_goblingiant
         Dependency_4: enemy_boss_skeletonghost
         Dependency_5: enemy_boss_skeletonking
-    Info_45:
+    Info_46:
       Name: enemy_boss_skeletonknightshield_tutorial
       Dependencies:
         Dependency_0: attackinfo
@@ -373,14 +378,14 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_skeletonghost
         Dependency_3: enemy_boss_skeletonking
         Dependency_4: enemy_boss_skeletonknight
-    Info_46:
+    Info_47:
       Name: enemy_elite_goblinarcher
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: prefabs
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_boss_skeletonking
-    Info_47:
+    Info_48:
       Name: enemy_elite_goblinfighter
       Dependencies:
         Dependency_0: attackinfo
@@ -388,7 +393,7 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_boss_skeletonking
         Dependency_4: enemy_elite_goblinarcher
-    Info_48:
+    Info_49:
       Name: enemy_elite_skeletonarcher
       Dependencies:
         Dependency_0: attackinfo
@@ -396,7 +401,7 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_skeletonghost
         Dependency_3: enemy_boss_skeletonking
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
-    Info_49:
+    Info_50:
       Name: enemy_elite_skeletonbomber
       Dependencies:
         Dependency_0: attackinfo
@@ -405,7 +410,7 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_skeletonknight
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
         Dependency_5: enemy_elite_goblinfighter
-    Info_50:
+    Info_51:
       Name: enemy_elite_skeletoncoffin
       Dependencies:
         Dependency_0: attackinfo
@@ -413,7 +418,7 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_boss_skeletonghost
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
-    Info_51:
+    Info_52:
       Name: enemy_elite_skeletonghost
       Dependencies:
         Dependency_0: attackinfo
@@ -425,7 +430,7 @@ AssetBundleManifest:
         Dependency_6: enemy_boss_skeletonknightshield_tutorial
         Dependency_7: enemy_elite_skeletonarcher
         Dependency_8: enemy_elite_skeletoncoffin
-    Info_52:
+    Info_53:
       Name: enemy_elite_skeletonknight
       Dependencies:
         Dependency_0: attackinfo
@@ -437,7 +442,7 @@ AssetBundleManifest:
         Dependency_6: enemy_boss_skeletonknightshield_tutorial
         Dependency_7: enemy_elite_skeletonbomber
         Dependency_8: enemy_elite_skeletoncoffin
-    Info_53:
+    Info_54:
       Name: enemy_elite_skeletonmaster
       Dependencies:
         Dependency_0: attackinfo
@@ -447,7 +452,7 @@ AssetBundleManifest:
         Dependency_4: enemy_boss_skeletonknight
         Dependency_5: enemy_boss_skeletonknightshield_tutorial
         Dependency_6: enemy_elite_skeletonghost
-    Info_54:
+    Info_55:
       Name: enemy_elite_skeletonzombie
       Dependencies:
         Dependency_0: attackinfo
@@ -459,7 +464,7 @@ AssetBundleManifest:
         Dependency_6: enemy_elite_skeletonbomber
         Dependency_7: enemy_elite_skeletoncoffin
         Dependency_8: enemy_elite_skeletonghost
-    Info_55:
+    Info_56:
       Name: enemy_lv1_goblinarcher
       Dependencies:
         Dependency_0: attackinfo
@@ -467,14 +472,14 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_boss_skeletonking
         Dependency_4: enemy_elite_goblinarcher
-    Info_56:
+    Info_57:
       Name: enemy_lv1_goblinfighter
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_elite_goblinfighter
-    Info_57:
+    Info_58:
       Name: enemy_lv1_skeletonghost
       Dependencies:
         Dependency_0: attackinfo
@@ -484,7 +489,7 @@ AssetBundleManifest:
         Dependency_4: enemy_boss_skeletonking
         Dependency_5: enemy_boss_skeletonknight
         Dependency_6: enemy_elite_skeletonghost
-    Info_58:
+    Info_59:
       Name: enemy_lv1_skeletonwheel
       Dependencies:
         Dependency_0: attackinfo
@@ -493,14 +498,14 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_skeletonknight
         Dependency_4: enemy_elite_goblinarcher
         Dependency_5: enemy_elite_skeletoncoffin
-    Info_59:
+    Info_60:
       Name: enemy_lv1_skeletonzombieblue
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_elite_skeletonzombie
-    Info_60:
+    Info_61:
       Name: enemy_lv1_skeletonzombiedagger
       Dependencies:
         Dependency_0: attackinfo
@@ -508,7 +513,7 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_elite_skeletoncoffin
         Dependency_4: enemy_elite_skeletonknight
-    Info_61:
+    Info_62:
       Name: enemy_lv2_goblinshaman
       Dependencies:
         Dependency_0: attackinfo
@@ -519,7 +524,7 @@ AssetBundleManifest:
         Dependency_5: enemy_elite_goblinfighter
         Dependency_6: enemy_elite_skeletoncoffin
         Dependency_7: enemy_lv1_skeletonwheel
-    Info_62:
+    Info_63:
       Name: enemy_lv2_skeletonbomber
       Dependencies:
         Dependency_0: attackinfo
@@ -531,14 +536,14 @@ AssetBundleManifest:
         Dependency_6: enemy_elite_skeletonbomber
         Dependency_7: enemy_elite_skeletoncoffin
         Dependency_8: enemy_lv1_skeletonzombiedagger
-    Info_63:
+    Info_64:
       Name: enemy_lv2_skeletoncoffin
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: prefabs
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_elite_skeletoncoffin
-    Info_64:
+    Info_65:
       Name: enemy_lv2_skeletonexplosionself
       Dependencies:
         Dependency_0: attackinfo
@@ -549,21 +554,21 @@ AssetBundleManifest:
         Dependency_5: enemy_elite_skeletonbomber
         Dependency_6: enemy_lv1_skeletonwheel
         Dependency_7: enemy_lv2_skeletonbomber
-    Info_65:
+    Info_66:
       Name: enemy_lv2_skeletongunman
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_boss_skeletonknight
-    Info_66:
+    Info_67:
       Name: enemy_lv2_skeletonzombiespear
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_lv1_skeletonzombiedagger
-    Info_67:
+    Info_68:
       Name: enemy_lv3_goblingaint
       Dependencies:
         Dependency_0: buff
@@ -572,7 +577,7 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_goblingiant
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
         Dependency_5: enemy_lv1_skeletonwheel
-    Info_68:
+    Info_69:
       Name: enemy_lv3_skeletonknighthammer
       Dependencies:
         Dependency_0: attackinfo
@@ -581,7 +586,7 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_skeletonking
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
         Dependency_5: enemy_elite_skeletoncoffin
-    Info_69:
+    Info_70:
       Name: enemy_lv3_skeletonknightshield
       Dependencies:
         Dependency_0: attackinfo
@@ -590,7 +595,7 @@ AssetBundleManifest:
         Dependency_3: enemy_boss_skeletonknight
         Dependency_4: enemy_boss_skeletonknightshield_tutorial
         Dependency_5: enemy_lv1_skeletonwheel
-    Info_70:
+    Info_71:
       Name: enemy_lv3_skeletonzombieaxe
       Dependencies:
         Dependency_0: attackinfo
@@ -598,17 +603,17 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_lv1_skeletonzombiedagger
         Dependency_4: enemy_lv2_skeletonzombiespear
-    Info_71:
+    Info_72:
       Name: -temp_enemy_creature_bat
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
-    Info_72:
+    Info_73:
       Name: -temp_enemy_creature_beatle
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: enemy_boss_goblingiant
-    Info_73:
+    Info_74:
       Name: -temp_enemy_creature_elite_bat
       Dependencies:
         Dependency_0: attackinfo
@@ -616,21 +621,21 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_skeletonking
         Dependency_3: enemy_elite_skeletonknight
         Dependency_4: -temp_enemy_creature_bat
-    Info_74:
+    Info_75:
       Name: -temp_enemy_creature_slime
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: battlepanel
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_boss_skeletonking
-    Info_75:
+    Info_76:
       Name: -temp_enemy_creature_test
       Dependencies:
         Dependency_0: attackinfo
         Dependency_1: battlepanel
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: -temp_enemy_creature_slime
-    Info_76:
+    Info_77:
       Name: enemy_lv2_goblintotem
       Dependencies:
         Dependency_0: buff
@@ -638,7 +643,7 @@ AssetBundleManifest:
         Dependency_2: enemy_boss_goblingiant
         Dependency_3: enemy_elite_skeletonghost
         Dependency_4: enemy_lv1_skeletonzombiedagger
-    Info_77:
+    Info_78:
       Name: player_fighter_shield
       Dependencies:
         Dependency_0: buff
@@ -657,7 +662,7 @@ AssetBundleManifest:
         Dependency_13: -temp_enemy_creature_slime
         Dependency_14: player_fighter_boxer
         Dependency_15: player_fighter_paladin
-    Info_78:
+    Info_79:
       Name: player_fighter_armor
       Dependencies:
         Dependency_0: buff
@@ -674,7 +679,7 @@ AssetBundleManifest:
         Dependency_11: enemy_lv1_skeletonzombiedagger
         Dependency_12: -temp_enemy_creature_slime
         Dependency_13: player_fighter_shield
-    Info_79:
+    Info_80:
       Name: player_fighter_boxer
       Dependencies:
         Dependency_0: attackinfo
@@ -692,7 +697,7 @@ AssetBundleManifest:
         Dependency_12: -temp_enemy_creature_slime
         Dependency_13: player_fighter_shield
         Dependency_14: player_fighter_armor
-    Info_80:
+    Info_81:
       Name: player_fighter_paladin
       Dependencies:
         Dependency_0: attackinfo
@@ -714,7 +719,7 @@ AssetBundleManifest:
         Dependency_16: player_fighter_shield
         Dependency_17: player_fighter_armor
         Dependency_18: player_fighter_boxer
-    Info_81:
+    Info_82:
       Name: player_saber_ninja
       Dependencies:
         Dependency_0: buff
@@ -734,7 +739,7 @@ AssetBundleManifest:
         Dependency_14: player_fighter_armor
         Dependency_15: player_fighter_boxer
         Dependency_16: player_fighter_paladin
-    Info_82:
+    Info_83:
       Name: player_saber_ronin
       Dependencies:
         Dependency_0: attackinfo
@@ -752,7 +757,7 @@ AssetBundleManifest:
         Dependency_12: player_fighter_boxer
         Dependency_13: player_fighter_paladin
         Dependency_14: player_saber_ninja
-    Info_83:
+    Info_84:
       Name: player_saber_samurai
       Dependencies:
         Dependency_0: attackinfo
@@ -771,7 +776,7 @@ AssetBundleManifest:
         Dependency_13: player_fighter_boxer
         Dependency_14: player_saber_ninja
         Dependency_15: player_saber_ronin
-    Info_84:
+    Info_85:
       Name: player_saber_whirlwind
       Dependencies:
         Dependency_0: attackinfo
@@ -791,7 +796,7 @@ AssetBundleManifest:
         Dependency_14: player_fighter_boxer
         Dependency_15: player_fighter_paladin
         Dependency_16: player_saber_ninja
-    Info_85:
+    Info_86:
       Name: ui_player_fighter_armor
       Dependencies:
         Dependency_0: playerschoolselection
@@ -805,7 +810,7 @@ AssetBundleManifest:
         Dependency_8: player_fighter_shield
         Dependency_9: player_fighter_armor
         Dependency_10: player_saber_ninja
-    Info_86:
+    Info_87:
       Name: ui_player_fighter_boxer
       Dependencies:
         Dependency_0: playerschoolselection
@@ -821,7 +826,7 @@ AssetBundleManifest:
         Dependency_10: player_fighter_boxer
         Dependency_11: player_saber_ninja
         Dependency_12: ui_player_fighter_armor
-    Info_87:
+    Info_88:
       Name: ui_player_fighter_paladin
       Dependencies:
         Dependency_0: playerschoolselection
@@ -836,7 +841,7 @@ AssetBundleManifest:
         Dependency_9: player_fighter_boxer
         Dependency_10: player_fighter_paladin
         Dependency_11: player_saber_ninja
-    Info_88:
+    Info_89:
       Name: ui_player_saber_ninja
       Dependencies:
         Dependency_0: attackinfo
@@ -847,7 +852,7 @@ AssetBundleManifest:
         Dependency_5: enemy_elite_skeletonknight
         Dependency_6: player_fighter_paladin
         Dependency_7: player_saber_ninja
-    Info_89:
+    Info_90:
       Name: ui_player_saber_ronin
       Dependencies:
         Dependency_0: enemy_boss_goblingiant
@@ -864,7 +869,7 @@ AssetBundleManifest:
         Dependency_11: player_saber_ninja
         Dependency_12: player_saber_ronin
         Dependency_13: ui_player_fighter_paladin
-    Info_90:
+    Info_91:
       Name: ui_player_saber_samurai
       Dependencies:
         Dependency_0: enemy_boss_goblingiant
@@ -873,7 +878,7 @@ AssetBundleManifest:
         Dependency_3: player_saber_ninja
         Dependency_4: player_saber_samurai
         Dependency_5: ui_player_saber_ninja
-    Info_91:
+    Info_92:
       Name: ui_player_saber_whirlwind
       Dependencies:
         Dependency_0: enemy_boss_goblingiant
@@ -882,6 +887,6 @@ AssetBundleManifest:
         Dependency_3: enemy_elite_skeletonknight
         Dependency_4: player_saber_ninja
         Dependency_5: player_saber_whirlwind
-    Info_92:
+    Info_93:
       Name: umbrella_lod0
       Dependencies: {}

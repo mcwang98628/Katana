@@ -17,13 +17,15 @@ public class MainSceneProcedure : IProcedure
                 ArchiveManager.Inst.ArchiveData.StatisticsData.ChapterClearanceDatas[0].Count>0)
             {
                 GameManager.Inst.StartCoroutine(StartMainPanel());
+
+                // GameManager.Inst.StartCoroutine(StartMainPanel());
                 Debug.Log("#流程# MainScene流程");
             }
             else
             {
                 UIManager.Inst.HideMask(() =>
                 {
-                    GameManager.Inst.StartCoroutine(StartMainPanel());
+                    GameManager.Inst.StartCoroutine(StartLogoPanel());
 
                     // GameManager.Inst.StartCoroutine(StartTutorialsBattle());
                 });
@@ -33,6 +35,39 @@ public class MainSceneProcedure : IProcedure
 
     }
 
+    IEnumerator StartLogoPanel()
+    {
+        bool maskIsShow = false;
+        UIManager.Inst.ShowMask(() =>
+        {
+            maskIsShow = true;
+        });
+        while (!maskIsShow)
+        {
+            yield return null;
+        }
+
+        ScenesManager.Inst.LoadScene("NullScene");
+        yield return null;
+        
+        yield return null;
+        UIManager.Inst.CloseAll(); 
+
+        UIManager.Inst.Open("LogoPanel");
+        
+
+        // BattleManager.Inst.LoadChapterBattle(ArchiveManager.Inst.ArchiveData.GlobalData.LastSelectChapterId);
+        //
+        // while (!BattleManager.Inst.BattleRules.IsLoadOver)
+        // {
+        //     yield return null;
+        // }
+        yield return null;
+        yield return new WaitForSeconds(8);
+        UIManager.Inst.HideMask(delegate { 
+            GameManager.Inst.StartCoroutine(StartMainPanel());
+        });
+    }
     IEnumerator StartMainPanel()
     {
         bool maskIsShow = false;
@@ -44,8 +79,7 @@ public class MainSceneProcedure : IProcedure
         {
             yield return null;
         }
-        ScenesManager.Inst.LoadScene("NullScene");
-        yield return null;
+        // ScenesManager.Inst.LoadScene("NullScene");
         
         yield return null;
         UIManager.Inst.CloseAll(); 

@@ -112,14 +112,14 @@ public class BattleGuide : MonoBehaviour
             currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.MoveCamera, Force = true, Text = "CameraPoint", ShowTime = 2.5f });
             //currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.Text, Force = false, Text = "TutorialDialog_3_1", ShowTime = 2.5f });
             currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.Text, Force = false, Text = "TutorialDialog_3_2", ShowTime = 2.5f });
-            currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.ToturialPanel, Force = false, Text = "Click", ShowTime = 3f });
+            // currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.ToturialPanel, Force = false, Text = "Click", ShowTime = 3f });
         }
         else if (type == RoomType.TreasureRoom && times == 1)
         { 
             currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.MoveCamera, Force = true, Text = "CameraPoint", ShowTime = 2.5f });
             //currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.Text, Force = true, Text = "TutorialDialog_4_1", ShowTime = 2.5f });
             currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.Text, Force = false, Text = "TutorialDialog_4_2", ShowTime = 2.5f });
-            currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.ToturialPanel, Force = false, Text = "Click", ShowTime = 3f });
+            // currentGuideList.Add(new BattleGuideSequenceData() { GuideType = BattleGuideType.ToturialPanel, Force = false, Text = "Click", ShowTime = 3f });
         }
         else if (type == RoomType.TreasureRoom && times == 2)
         {

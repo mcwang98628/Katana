@@ -64,7 +64,7 @@ public class PanelBase : MonoBehaviour
         _canvasGroup.DOFade(0, 0.2f).OnComplete(() =>
         {
             gameObject.SetActive(false);
-            callBack.Invoke();
+            // callBack.Invoke();
         });
         OnUnPause();
     }
