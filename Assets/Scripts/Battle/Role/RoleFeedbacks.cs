@@ -1,4 +1,5 @@
-﻿using AnimatorTools;
+﻿using System;
+using AnimatorTools;
 using BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject;
 using BehaviorDesigner.Runtime.Tasks.Unity.UnityString;
 using System.Collections;
@@ -6,6 +7,8 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using BehaviorDesigner.Runtime;
+using Random = UnityEngine.Random;
+
 [System.Serializable]
 public class FeedbackEvent
 {
@@ -22,10 +25,10 @@ public class RoleFeedbacks : MonoBehaviour
     [InfoBox("顺序很重要")]
     public List<ParticleSystem> Pars;
     public List<AudioClip> Sfxs;
+    
     public List<FeedBackObject> Feedbacks;
     [SerializeField]
     public List<FeedbackEvent> Events;
-
 
     PhantomReleaser _phantomReleaser;
 
